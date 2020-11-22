@@ -1,0 +1,931 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=false;__ez.queue=(function(){var count=0,incr=0,items=[],timeDelayFired=false,hpItems=[],lpItems=[],allowLoad=true;var obj={func:function(name,funcName,parameters,isBlock,blockedBy,deleteWhenComplete,proceedIfError){var self=this;this.name=name;this.funcName=funcName;this.parameters=parameters===null?null:(parameters instanceof Array)?parameters:[parameters];this.isBlock=isBlock;this.blockedBy=blockedBy;this.deleteWhenComplete=deleteWhenComplete;this.isError=false;this.isComplete=false;this.isInitialized=false;this.proceedIfError=proceedIfError;this.isTimeDelay=false;this.process=function(){log("... func = "+name);self.isInitialized=true;self.isComplete=true;log("... func.apply: "+name);var funcs=self.funcName.split('.');var func=null;if(funcs.length>3){}else if(funcs.length===3){func=window[funcs[0]][funcs[1]][funcs[2]];}else if(funcs.length===2){func=window[funcs[0]][funcs[1]];}else{func=window[self.funcName];}
+if(typeof func!=='undefined'&&func!==null){func.apply(null,this.parameters);}
+if(self.deleteWhenComplete===true)delete items[name];if(self.isBlock===true){log("----- F'D: "+self.name);processAll();}}},file:function(name,path,isBlock,blockedBy,async,defer,proceedIfError){var self=this;this.name=name;this.path=path;this.async=async;this.defer=defer;this.isBlock=isBlock;this.blockedBy=blockedBy;this.isInitialized=false;this.isError=false;this.isComplete=false;this.proceedIfError=proceedIfError;this.isTimeDelay=false;this.process=function(){self.isInitialized=true;log("... file = "+name);var scr=document.createElement('script');scr.src=path;if(async===true)scr.async=true;else if(defer===true)scr.defer=true;scr.onerror=function(){log("----- ERR'D: "+self.name);self.isError=true;if(self.isBlock===true){processAll();}};scr.onreadystatechange=scr.onload=function(){var state=scr.readyState;log("----- F'D: "+self.name);if((!state||/loaded|complete/.test(state))){self.isComplete=true;if(self.isBlock===true){processAll();}}};document.getElementsByTagName('head')[0].appendChild(scr);}}};function init(){window.addEventListener("load",function(){setTimeout(function(){timeDelayFired=true;log('TDELAY -----');processAll();},5000);},false);}
+function addFile(name,path,isBlock,blockedBy,async,defer,proceedIfError,priority){var item=new obj.file(name,path,isBlock,blockedBy,async,defer,proceedIfError);if(priority===true){hpItems[name]=item}else{lpItems[name]=item}
+items[name]=item;checkIfBlocked(item);}
+function setallowLoad(settobool){allowLoad=settobool}
+function addFunc(name,func,parameters,isBlock,blockedBy,autoInc,deleteWhenComplete,proceedIfError,priority){if(autoInc===true)name=name+"_"+incr++;var item=new obj.func(name,func,parameters,isBlock,blockedBy,deleteWhenComplete,proceedIfError);if(priority===true){hpItems[name]=item}else{lpItems[name]=item}
+items[name]=item;checkIfBlocked(item);}
+function addTimeDelayFile(name,path){var item=new obj.file(name,path,false,[],false,false,true);item.isTimeDelay=true;log(name+' ... '+' FILE! TDELAY');lpItems[name]=item;items[name]=item;checkIfBlocked(item);}
+function addTimeDelayFunc(name,func,parameters){var item=new obj.func(name,func,parameters,false,[],true,true);item.isTimeDelay=true;log(name+' ... '+' FUNCTION! TDELAY');lpItems[name]=item;items[name]=item;checkIfBlocked(item);}
+function checkIfBlocked(item){if(isBlocked(item)===true||allowLoad==false)return;item.process();}
+function isBlocked(item){if(item.isTimeDelay===true&&timeDelayFired===false){log(item.name+" blocked = TIME DELAY!");return true;}
+if(item.blockedBy instanceof Array){for(var i=0;i<item.blockedBy.length;i++){var block=item.blockedBy[i];if(items.hasOwnProperty(block)===false){log(item.name+" blocked = "+block);return true;}else if(item.proceedIfError===true&&items[block].isError===true){return false;}else if(items[block].isComplete===false){log(item.name+" blocked = "+block);return true;}}}
+return false;}
+function log(msg){var href=window.location.href;var reg=new RegExp('[?&]ezq=([^&#]*)','i');var string=reg.exec(href);var res=string?string[1]:null;if(res==="1")console.debug(msg);}
+function processAll(){count++;if(count>200)return;log("let's go");processItems(hpItems);processItems(lpItems);}
+function processItems(list){for(var i in list){if(list.hasOwnProperty(i)===false)continue;var item=list[i];if(item.isComplete===true||isBlocked(item)||item.isInitialized===true||item.isError===true){if(item.isError===true){log(item.name+': error')}else if(item.isComplete===true){log(item.name+': complete already')}else if(item.isInitialized===true){log(item.name+': initialized already')}}else{item.process();}}}
+init();return{addFile:addFile,addDelayFile:addTimeDelayFile,addFunc:addFunc,addDelayFunc:addTimeDelayFunc,items:items,processAll:processAll,setallowLoad:setallowLoad};})();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.queue.addFile('/detroitchicago/boise.js', '/detroitchicago/boise.js?gcb=191-6&cb=1', false, [], true, false, true, false);</script>
+<link href="//ad.doubleclick.net" rel="dns-prefetch">
+<link href="//pagead2.googlesyndication.com" rel="dns-prefetch">
+<link href="//googleads.g.doubleclick.net" rel="dns-prefetch">
+<link href="//tpc.googlesyndication.com" rel="dns-prefetch">
+<link href="//adservice.google.com" rel="dns-prefetch">
+<link href="//secureads.g.doubleclick.net" rel="dns-prefetch">
+<link href="//www.googletagservices.com" rel="dns-prefetch">
+<link href="//ads.pubmatic.com" rel="dns-prefetch">
+<link rel="preload" href="//ads.pubmatic.com/AdServer/js/pwt/156983/3085/pwt.js" as="script">
+<link href="//web.hb.ad.cpe.dotomi.com" rel="dns-prefetch">
+<link href="//dmx.districtm.io" rel="dns-prefetch">
+<link href="//ezoic-d.openx.net" rel="dns-prefetch">
+<link href="//htlb.casalemedia.com" rel="dns-prefetch">
+<link href="//g2.gumgum.com" rel="dns-prefetch">
+<link href="//adserver-us.adtech.advertising.com" rel="dns-prefetch">
+<link href="//c2shb.ssp.yahoo.com" rel="dns-prefetch">
+<link href="//gum.criteo.com" rel="dns-prefetch">
+<link href="//prebid.a-mo.net" rel="dns-prefetch">
+<link href="//ontetag-sys.com" rel="dns-prefetch">
+<link href="//hb.undertone.com" rel="dns-prefetch">
+<link href="//fastlane.rubiconproject.com" rel="dns-prefetch">
+<script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript' id='bsaihudashidsadhu'>window.ezogtk="";if(typeof processGoogleToken!=="function"){processGoogleToken=function(a){window.ezogtk=a.newToken;processGoogleToken=undefined;var el=document.getElementById('bsaihudashidsadhu');if(el!==null){el.parentNode.removeChild(document.getElementById('bsaihudashidsadhu'))}
+var eel=document.getElementById('ezintegrator');if(eel!==null){eel.parentNode.removeChild(document.getElementById('ezintegrator'))}}}</script>
+<script async="" src="//c.amazon-adsystem.com/aax2/apstag.js"></script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer>var __ezaps=[{slotID:'div-gpt-ad-businessknowhow_com-medrectangle-3-0',slotName:'/1254144/businessknowhow_com-medrectangle-3',sizes:[[300,250]]},{slotID:'div-gpt-ad-businessknowhow_com-box-1-0',slotName:'/1254144/businessknowhow_com-box-1',sizes:[[336,280],[300,250]]},{slotID:'div-gpt-ad-businessknowhow_com-large-leaderboard-1-0',slotName:'/1254144/businessknowhow_com-large-leaderboard-1',sizes:[[336,280],[300,250]]},{slotID:'div-gpt-ad-businessknowhow_com-large-billboard-2-0',slotName:'/1254144/businessknowhow_com-large-billboard-2',sizes:[[300,600],[160,600]]},{slotID:'div-gpt-ad-businessknowhow_com-large-leaderboard-2-0',slotName:'/1254144/businessknowhow_com-large-leaderboard-2',sizes:[[580,400],[336,280],[300,250]]}];var __ezapid="aa05931b-5308-4ea3-95a2-adf84f4ffde4";!function(a9,a){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}
+a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};}("apstag",window);apstag.init({pubID:__ezapid,adServer:'googletag',});function ezapsFetchBids(amazonSlots){if(typeof amazonSlots==='undefined'||amazonSlots.length===0){return}
+apstag.fetchBids({slots:amazonSlots,timeout:2e3},function(bids){function getSlotById(id){if(typeof window.ezslots==='undefined'||window.ezslots==0){return;}
+for(var i=0;i<window.ezslots.length;i++){var slot=window[ezslots[i]];if(typeof slot==='undefined'){continue;}
+var slotId=slot.getSlotElementId();if(typeof slotId!=='undefined'&&slotId==id){return slot;}}}
+function setA9DisplayBids(bids){if(typeof bids==='undefined'||bids.length==0){return;}
+var keys=apstag.targetingKeys();for(var i=0;i<bids.length;i++){var bid=bids[i];var slot=getSlotById(bid.slotID);for(var k=0;k<keys.length;k++){if(keys[k]in bid){slot.setTargeting(keys[k],bid[keys[k]]);}}}}
+googletag.cmd.push(function(){setA9DisplayBids(bids);});});}
+if(typeof __tcfapi!='undefined'){__tcfapi('addEventListener',2,function(tc,success){if(success&&(tc.eventStatus=="useractioncomplete"||tc.eventStatus=="tcloaded")){if((tc.purpose.consents["1"]===true)&&(tc.vendor.consents["793"]===true)){ezapsFetchBids(__ezaps);}}});}else{ezapsFetchBids(__ezaps);}</script>
+<script src="https://adservice.google.com/adsid/integrator.js?domain=www.businessknowhow.com" id="ezintegrator"></script>
+<script type="text/javascript">
+	var __banger_pmp_deals=function(){var d={17:{"DealId":17,"Floor":160},18:{"DealId":18,"Floor":25},19:{"DealId":19,"Floor":100},20:{"DealId":20,"Floor":300}};return[{"SlotName":"/1254144/businessknowhow_com-large-leaderboard-2","Deals":[d[17],d[18],d[19]]},{"SlotName":"/1254144/businessknowhow_com-box-1","Deals":[d[17],d[18],d[19]]},{"SlotName":"/1254144/businessknowhow_com-large-leaderboard-1","Deals":[d[17],d[18],d[19],d[20]]},{"SlotName":"/1254144/businessknowhow_com-large-billboard-2","Deals":[d[17],d[18],d[19]]},{"SlotName":"/1254144/businessknowhow_com-medrectangle-3","Deals":[d[17],d[18],d[19],d[20]]}]}();
+</script>
+<script type='text/javascript'>_ebcids=[138231308856,138231308940,138231308949,138231387842,138231421744,138231421759,138231421774,138231421783,138231421789,138231421792,138242067587,138242067590,138242067602,138242067605,138242067608,138242067614,138242229406,138242229415,138242229421,138242229430];</script>
+<script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>ezobv=92;</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>function ez_isclean(data){if(typeof data==='undefined'){data=document.URL;}
+var re=/(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))(@|%2540|%40)((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;var isClean=!re.test(data);return isClean;}
+var ez_queue=new Array();function sort_queue(a,b)
+{if(a.priority<b.priority)return-1;else if(a.priority==b.priority)return 0;else return 1;}
+function execute_ez_queue()
+{ez_queue.sort(sort_queue);for(var i in ez_queue)
+{if(typeof ez_queue[i].method!="undefined")
+{try{ez_queue[i].method.call(null);}
+catch(err){}}}}
+window.ez_ad_units=new Array();window.ezslots=new Array();window.ezsrqt={};function ez_write_tag(d){if(ez_isclean()&&d instanceof Array){if(typeof ezstandalone!=='undefined'&&typeof ezstandalone.selectedPlaceholders!=='undefined'&&ezstandalone.selectedPlaceholders[d[3]]===true){return "1+1";}
+ez_ad_units[ez_ad_units.length]=d;var dve="";if(typeof d[5]!='undefined'&&d[5]>0){dve='_'+d[5];}
+var ezcmd="googletag.cmd.push(function() {var divid = 'div-gpt-ad-"+d[1]+"-"+d[4]+""+dve+"';if(typeof ezlrarn == 'function'){ezlrarn(divid);}googletag.display(divid);var to = 0;if("+d[2]+".getTargeting('ga')[0] == '0'){to = 500;console.log('"+d[2]+" - no google');}if(window.ezDisableInitialLoad==true){setTimeout(function(){googletag.pubads().refresh(["+d[2]+"])},to);}});";return ezcmd;}
+return "1+1";}
+function in_array(needle,haystack){var length=haystack.length;for(var i=0;i<length;i++){if(haystack[i]==needle)return true;}
+return false;}
+var ezrpos=new Array();var ez_current_interval;var ez_current_load=0;</script><script>
+			PWT = {};
+
+			(function () {
+				var purl = window.location.href;
+				var url = '//ads.pubmatic.com/AdServer/js/pwt/156983/3085'; //Replace with yor publisher Id and profile Id
+				var profileVersionId = '';
+				if (purl.indexOf('pwtv=') > 0) {
+					var regexp = /pwtv=(.*?)(&|$)/g;
+					var matches = regexp.exec(purl);
+					if (matches.length >= 2 && matches[1].length > 0) {
+						profileVersionId = '/' + matches[1];
+					}
+				}
+				var wtads = document.createElement('script');
+				wtads.async = true;
+				wtads.type = 'text/javascript';
+				wtads.src = url + profileVersionId + '/pwt.js';
+				var node = document.getElementsByTagName('script')[0];
+				node.parentNode.insertBefore(wtads, node);
+			})();
+			</script>
+			<script type="text/javascript" data-cfasync="false" data-ezscrex='false'>var __ezpbdall="/porpoiseant/dall3700test.js?cb=191-6";var __ezpbdalld=4000;__ez.queue.addFile('/detroitchicago/dallas.js', '/detroitchicago/dallas.js?gcb=6&cb=1', false, [], true, false, true, false);</script><script data-ezscrex="false" data-cfasync="false" type="text/javascript" data-pagespeed-no-defer>var epbjs=epbjs||{};epbjs.que=epbjs.que||[];epbjs.bidderTimeout=2000;epbjs.useAdj=true;epbjs.SS={"amx":11290,"conversant":10033,"criteo":10050,"districtm":10035,"gumgum":10079,"ix":10082,"oftmedia":10081,"onedisplay":10028,"onemobile":11293,"onetag":11291,"openx":10015,"rhythmone":11298,"rubicon":10063,"undertone":11292};epbjs.bidders=['conversant','districtm','openx','oftmedia','ix','gumgum','onedisplay','onemobile','criteo','amx','onetag','undertone','rubicon','rhythmone'];epbjs.que.push(function(){epbjs.aliasBidder('appnexus', 'conversant');epbjs.aliasBidder('appnexus', 'districtm');epbjs.aliasBidder('appnexus', 'oftmedia');});epbjs.bidderSettings={conversant: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.800000; var adj2 = adj1 * 1.000000; return adj2; }},districtm: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 1.000000; var adj2 = adj1 * 1.000000; return adj2; }},openx: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 1.000000; var adj2 = adj1 * 1.000000; return adj2; }},oftmedia: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.850000; var adj2 = adj1 * 1.000000; return adj2; }},ix: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.950000; var adj2 = adj1 * 1.000000; return adj2; }},gumgum: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.960000; var adj2 = adj1 * 1.000000; return adj2; }},onedisplay: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.900000; var adj2 = adj1 * 1.000000; return adj2; }},onemobile: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.900000; var adj2 = adj1 * 1.000000; return adj2; }},criteo: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.900000; var adj2 = adj1 * 1.000000; return adj2; }},amx: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.800000; var adj2 = adj1 * 1.000000; return adj2; }},onetag: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 1.000000; var adj2 = adj1 * 1.000000; return adj2; }},undertone: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 1.000000; var adj2 = adj1 * 1.000000; return adj2; }},rubicon: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 1.000000; var adj2 = adj1 * 1.000000; return adj2; }},rhythmone: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 1.000000; var adj2 = adj1 * 1.000000; return adj2; }},};epbjs.gadj=1.000000;var __enableAnalytics=false;
+var __sellerid="f96897cf43321c31e7d1b08ce7517b8a";__ez.queue.addFile('/detroitchicago/houston.js', '/detroitchicago/houston.js?gcb=6&cb=27', false, [], true, false, true, false);__ez.queue.addFunc("epbjsRequestAdUnits", "epbjsRequestAdUnits", [[{code: 'div-gpt-ad-businessknowhow_com-medrectangle-3-0', mediaTypes: {banner: { sizes:[[300,250]] }}, bids: [{bidder: 'rhythmone', params: { placementId: '215626' }},{bidder: 'criteo', params: { networkId: '7987' }},{bidder: 'undertone', params: { publisherId: '4009', placementId: '4009001' }},{bidder: 'openx',params: { delDomain: 'ezoic-d.openx.net', unit: '538151781' }},{bidder: 'conversant', params: { site_id: '119140', secure: 1 }},{bidder: 'rubicon', params:{ accountId: '21150', siteId: '351284', zoneId: '1868548' }},{bidder: 'amx', params: {  }},{bidder: 'oftmedia', params:{ placementId: '19594048', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'districtm', params: { placementId: '11586113' }},{bidder: 'gumgum', params:{ inSlot: '20841' }},{bidder: 'ix', params: { siteId: '305142', size: [300,250] }}] },{code: 'div-gpt-ad-businessknowhow_com-box-1-0', mediaTypes: {banner: { sizes:[[336,280],[300,250]] }}, bids: [{bidder: 'rhythmone', params: { placementId: '215626' }},{bidder: 'amx', params: {  }},{bidder: 'conversant', params: { site_id: '119140', secure: 1 }},{bidder: 'districtm', params: { placementId: '11586113' }},{bidder: 'rubicon', params:{ accountId: '21150', siteId: '351284', zoneId: '1868548' }},{bidder: 'undertone', params: { publisherId: '4009', placementId: '4009001' }},{bidder: 'oftmedia', params:{ placementId: '19593629', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'criteo', params: { networkId: '7987' }},{bidder: 'openx',params: { delDomain: 'ezoic-d.openx.net', unit: '538151781' }},{bidder: 'gumgum', params:{ inSlot: '20829' }},{bidder: 'ix', params: { siteId: '305136', size: [336,280] }}] },{code: 'div-gpt-ad-businessknowhow_com-large-leaderboard-1-0', mediaTypes: {banner: { sizes:[[336,280],[300,250]] }}, bids: [{bidder: 'rhythmone', params: { placementId: '215626' }},{bidder: 'districtm', params: { placementId: '11586113' }},{bidder: 'openx',params: { delDomain: 'ezoic-d.openx.net', unit: '538151781' }},{bidder: 'criteo', params: { networkId: '7987' }},{bidder: 'conversant', params: { site_id: '119140', secure: 1 }},{bidder: 'amx', params: {  }},{bidder: 'ix', params: { siteId: '305147', size: [336,280] }},{bidder: 'rubicon', params:{ accountId: '21150', siteId: '351284', zoneId: '1868548' }},{bidder: 'gumgum', params:{ inSlot: '20851' }},{bidder: 'oftmedia', params:{ placementId: '19594063', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'undertone', params: { publisherId: '4009', placementId: '4009001' }}] },{code: 'div-gpt-ad-businessknowhow_com-large-billboard-2-0', mediaTypes: {banner: { sizes:[[300,600],[160,600]] }}, bids: [{bidder: 'rhythmone', params: { placementId: '215626' }},{bidder: 'districtm', params: { placementId: '11586113' }},{bidder: 'openx',params: { delDomain: 'ezoic-d.openx.net', unit: '538151779' }},{bidder: 'criteo', params: { networkId: '7987' }},{bidder: 'conversant', params: { site_id: '119140', secure: 1 }},{bidder: 'gumgum', params:{ inSlot: '20867' }},{bidder: 'amx', params: {  }},{bidder: 'oftmedia', params:{ placementId: '19594060', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'rubicon', params:{ accountId: '21150', siteId: '351284', zoneId: '1868548' }},{bidder: 'ix', params: { siteId: '305146', size: [300,600] }}] },{code: 'div-gpt-ad-businessknowhow_com-large-leaderboard-2-0', mediaTypes: {banner: { sizes:[[580,400],[336,280],[300,250]] }}, bids: [{bidder: 'rhythmone', params: { placementId: '215626' }},{bidder: 'conversant', params: { site_id: '119140', secure: 1 }},{bidder: 'oftmedia', params:{ placementId: '19594066', video: {skippable: true, playback_method: ['auto_play_sound_off']}}},{bidder: 'ix', params: { siteId: '305148', size: [580,400] }},{bidder: 'gumgum', params:{ inSlot: '20853' }},{bidder: 'districtm', params: { placementId: '11586113' }},{bidder: 'criteo', params: { networkId: '7987' }},{bidder: 'openx',params: { delDomain: 'ezoic-d.openx.net', unit: '538151781' }},{bidder: 'amx', params: {  }},{bidder: 'rubicon', params:{ accountId: '21150', siteId: '351284', zoneId: '1868548' }},{bidder: 'undertone', params: { placementId: '4009001', publisherId: '4009' }}] }]], false, ['/detroitchicago/houston.js'], true, true, true, true);</script><script type='text/javascript' data-ezscrex="false">var ezorbf = []; </script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.isEZABL=false;window.ezmadspc=300;window.ezoViewCheck=false;</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.ezDisableInitialLoad=false;</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.googletag=window.googletag||{};googletag.cmd=googletag.cmd||[];</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>(function(){var gads=document.createElement('script');gads.async=true;gads.type='text/javascript';var useSSL='https:'==document.location.protocol;gads.src=(useSSL?'https:':'http:')+
+'//securepubads.g.doubleclick.net/tag/js/gpt.js';var node=document.getElementsByTagName('script')[0];node.parentNode.insertBefore(gads,node);})();</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.ezogetbrkey = function(s){ var k = 'br1';var k2 = 'eb_br';if(window.ezogtk == ""){k='br1u';k2='eb_bru';}else if(window.ezogtk != "NT"){k='br1t';k2='eb_brt';} s.setTargeting('br1', s.getTargeting(k));s.setTargeting('eb_br', s.getTargeting(k2));};googletag.cmd.push(function() {if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslot_2 = googletag.defineSlot('/1254144/businessknowhow_com-large-leaderboard-1',[[336,280],[300,250],[120,240],[200,200],[180,150],[125,125],[320,50],[250,250],[320,100],[234,60],['fluid']],'div-gpt-ad-businessknowhow_com-large-leaderboard-1-0').addService(googletag.pubads()).setTargeting('iid20','1921612').setTargeting('t','134').setTargeting('d','46971').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1107').setTargeting('sap','1107').setTargeting('a','|2|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod72-c').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','2').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','0').setTargeting('al','1035').setTargeting('compid','0').setTargeting('tap','businessknowhow_com-large-leaderboard-1-1921612').setTargeting('eb_br','9e0a1ce5b2455cb9b48d5df4c6bf4053').setTargeting('eba','1').setTargeting('ebss',[10082,10015]).setTargeting('asau','5755766399').setTargeting('bv','19').setTargeting('bvm','0').setTargeting('bvr','9').setTargeting('shp','2').setCollapseEmptyDiv(false).setTargeting('ft','1').setTargeting('br1','350').setTargeting('br2','160').setTargeting('ezoic','1').setTargeting('nmau','0').setTargeting('mau','0').setTargeting('stl','63,14,0,4,97,122,66,20,71,30,0,31').setTargeting('deal1',[21,22,23,24,25,26]).setTargeting('ax_ssid','10082');ezslot_2.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','9478880261').set('adsense_link_color','37a5d7').set('adsense_text_color','000000').set('adsense_url_color','F0F0F0');ezrpos[2]="2";ezslot_3 = googletag.defineSlot('/1254144/businessknowhow_com-large-billboard-2',[[300,600],[180,150],[125,125],[300,250],[320,50],[250,250],[320,100],[200,200],[336,280],[120,240],[234,60],['fluid']],'div-gpt-ad-businessknowhow_com-large-billboard-2-0').addService(googletag.pubads()).setTargeting('iid20','1929862').setTargeting('t','134').setTargeting('d','46971').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1106').setTargeting('sap','1106').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod72-c').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','3').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','0').setTargeting('al','1034').setTargeting('compid','0').setTargeting('tap','businessknowhow_com-large-billboard-2-1929862').setTargeting('eb_br','8de2c8ca79e8623e3cb37120a35ebaa2').setTargeting('eba','1').setTargeting('ebss',[10082,10015]).setTargeting('asau','5755766399').setTargeting('bv','0').setTargeting('bvm','1').setTargeting('bvr','1').setTargeting('shp','2').setCollapseEmptyDiv(false).setTargeting('ft','1').setTargeting('br1','240').setTargeting('br2','120').setTargeting('ezoic','1').setTargeting('nmau','0').setTargeting('mau','0').setTargeting('stl','34,0,28,67,45,122,66,20,71,30,0,31').setTargeting('deal1',[20,21,22,23,24,25,26]).setTargeting('ax_ssid','10082');ezslot_3.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','9478880261').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[3]="3";ezslot_1 = googletag.defineSlot('/1254144/businessknowhow_com-box-1',[[336,280],[180,150],[300,250],[250,250],[200,200],[125,125],[234,60],[320,50],[320,100],[120,240],['fluid']],'div-gpt-ad-businessknowhow_com-box-1-0').addService(googletag.pubads()).setTargeting('iid20','1940361').setTargeting('t','134').setTargeting('d','46971').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1105').setTargeting('sap','1105').setTargeting('a','|6|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod72-c').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','1').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','0').setTargeting('al','1000').setTargeting('compid','0').setTargeting('tap','businessknowhow_com-box-1-1940361').setTargeting('eb_br','57914c3716312cb7e954090f0717ea25').setTargeting('eba','1').setTargeting('ebss',[10082,10015]).setTargeting('asau','5755766399').setTargeting('bv','23').setTargeting('bvm','0').setTargeting('bvr','3').setTargeting('shp','2').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('ft','1').setTargeting('br1','260').setTargeting('br2','140').setTargeting('ezoic','1').setTargeting('nmau','0').setTargeting('mau','0').setTargeting('stl','83,13,120,67,51,0,66,20,71,30,0,31').setTargeting('deal1',[20,21,22,23,24,25,26]).setTargeting('ax_ssid','10082');ezslot_1.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','9478880261').set('adsense_link_color','858585').set('adsense_text_color','000000').set('adsense_url_color','F0F0F0');ezrpos[1]="1";ezslot_4 = googletag.defineSlot('/1254144/businessknowhow_com-large-leaderboard-2',[[580,400],[250,250],[180,150],[234,60],[336,280],[320,50],[468,60],[320,100],[120,240],[200,200],[125,125],[300,250],['fluid']],'div-gpt-ad-businessknowhow_com-large-leaderboard-2-0').addService(googletag.pubads()).setTargeting('iid20','1937062').setTargeting('t','134').setTargeting('d','46971').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1104').setTargeting('sap','1104').setTargeting('a','|1|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod72-c').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','4').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','36').setTargeting('al','1036').setTargeting('compid','0').setTargeting('tap','businessknowhow_com-large-leaderboard-2-1937062').setTargeting('eb_br','3530fcb6bcc13dc3c1712eaef7d92700').setTargeting('eba','1').setTargeting('ebss',[10082,10015]).setTargeting('asau','5755766399').setTargeting('bv','14').setTargeting('bvm','0').setTargeting('bvr','4').setTargeting('shp','1').setCollapseEmptyDiv(false).setTargeting('ft','1').setTargeting('br1','160').setTargeting('br2','80').setTargeting('ezoic','1').setTargeting('nmau','0').setTargeting('mau','0').setTargeting('stl','32,0,0,4,0,122,66,20,71,30,0,31').setTargeting('deal1',[20,21,22,23,24,25,26]).setTargeting('ax_ssid','10082');ezslot_4.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','9478880261').set('adsense_link_color','1a0dab').set('adsense_text_color','545454').set('adsense_url_color','006621');ezrpos[4]="4";ezslot_0 = googletag.defineSlot('/1254144/businessknowhow_com-medrectangle-3',[[300,250],[200,200],[180,150],[580,400],[125,125],[234,60],[250,250],[120,240],[468,60],[320,100],[336,280],[320,50]],'div-gpt-ad-businessknowhow_com-medrectangle-3-0').addService(googletag.pubads()).setTargeting('iid20','1937962').setTargeting('t','134').setTargeting('d','46971').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1103').setTargeting('sap','1103').setTargeting('a','|254|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod72-c').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','0').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','21').setTargeting('al','1021').setTargeting('compid','0').setTargeting('tap','businessknowhow_com-medrectangle-3-1937962').setTargeting('eb_br','6e85b37de1b1ffc2593baa5d6e4b02fc').setTargeting('eba','1').setTargeting('ebss',[10082,10015]).setTargeting('asau','5755766399').setTargeting('bv','3').setTargeting('bvm','0').setTargeting('bvr','8').setTargeting('shp','1').setCollapseEmptyDiv(false).setTargeting('ft','1').setTargeting('br1','450').setTargeting('br2','220').setTargeting('ezoic','1').setTargeting('nmau','0').setTargeting('mau','0').setTargeting('stl','32,0,0,4,0,122,66,20,71,30,0,31').setTargeting('deal1',[21,22,23,24,25,26]).setTargeting('ax_ssid','10082');ezslot_0.set('adsense_background_color','001DAD').set('adsense_border_color','001DAD').set('adsense_channel_ids','9478880261').set('adsense_link_color','FFFFFF').set('adsense_text_color','FFFFFF').set('adsense_url_color','EEFF00');ezrpos[0]="0";}else{window.ezHideLocations=[];window.ezHideLocations.push('div-gpt-ad-businessknowhow_com-large-leaderboard-1-0');window.ezHideLocations.push('div-gpt-ad-businessknowhow_com-large-billboard-2-0');ezslot_1 = googletag.defineSlot('/1254144/businessknowhow_com-box-1',[[336,280],[180,150],[300,250],[250,250],[200,200],[125,125],[234,60],[320,50],[320,100],[120,240],['fluid']],'div-gpt-ad-businessknowhow_com-box-1-0').addService(googletag.pubads()).setTargeting('iid20','1940361').setTargeting('t','134').setTargeting('d','46971').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1105').setTargeting('sap','1105').setTargeting('a','|6|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod72-c').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','1').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','0').setTargeting('al','1000').setTargeting('compid','0').setTargeting('tap','businessknowhow_com-box-1-1940361').setTargeting('eb_br','57914c3716312cb7e954090f0717ea25').setTargeting('eba','1').setTargeting('ebss',[10082,10015]).setTargeting('asau','5755766399').setTargeting('bv','23').setTargeting('bvm','0').setTargeting('bvr','3').setTargeting('shp','2').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('ft','1').setTargeting('br1','260').setTargeting('br2','140').setTargeting('ezoic','1').setTargeting('nmau','0').setTargeting('mau','0').setTargeting('stl','83,13,120,67,51,0,66,20,71,30,0,31').setTargeting('deal1',[20,21,22,23,24,25,26]).setTargeting('ax_ssid','10082');ezslot_1.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','9478880261').set('adsense_link_color','858585').set('adsense_text_color','000000').set('adsense_url_color','F0F0F0');ezrpos[1]="1";window.ezHideLocations.push('div-gpt-ad-businessknowhow_com-large-leaderboard-2-0');window.ezHideLocations.push('div-gpt-ad-businessknowhow_com-medrectangle-3-0');}googletag.pubads().addEventListener('slotRenderEnded', function(event) { __ez.queue.addFunc("ezbanger", "ezbanger", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('impressionViewable', function(event) { __ez.queue.addFunc("ezvb", "ezvb", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotResponseReceived', function(event) { __ez.queue.addFunc("ezsr", "ezsr", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotRequested', function(e) { window.ezsrqt[e.slot.getSlotElementId()] = Date.now();});googletag.pubads().enableLazyLoad({fetchMarginPercent: -1, renderMarginPercent: 250, mobileScaling: 2.0});googletag.enableServices();});window.ezoll = false;window.ezoadxnc = '1254144';window.ezorefgsl=function(r){Array.isArray(r)||(r=[r]);for(var e=r.length,o=Array(),a=0;a<e;a++){var t=r[a];t.setTargeting("reqt",Date.now()),void 0!==t.DFPSlot?o.push(t.DFPSlot):o.push(t)}googletag.pubads().refresh(o)};var ezoibfh = Array();ezoibfh[0] = 'zero';ezoibfh[1000000] = 'off';ezoibfh[180]='9ae587f95e95c876b7b76fd4c72a3838';
+ezoibfh[40]='ee685f77592ce296910ee91457d66ba3';
+ezoibfh[28]='674294a1b21a1e89fc99c14c9b17be44';
+ezoibfh[2]='b6c98a8bb15764f1c4ee331dcb724178';
+ezoibfh[350]='9e0a1ce5b2455cb9b48d5df4c6bf4053';
+ezoibfh[120]='58ef7bddb438af5e257c4377f32c243a';
+ezoibfh[100]='a495ce7dbb4cefcd3e0a722048894f41';
+ezoibfh[36]='8c5ffefb122f59a66a8b7672d4452af2';
+ezoibfh[400]='76163170a8636ae5b88417f095893e08';
+ezoibfh[70]='527e52c10635ac8136a4c84094ee49a8';
+ezoibfh[50]='3ba982fc4238dd4197b1d51b345478dc';
+ezoibfh[46]='fe5b0c99ab7ba15f050582be1301303f';
+ezoibfh[38]='23b5ca1d9de2587e6a4ecfd33d61b709';
+ezoibfh[32]='d31e71883d00099e275b6c5878eed023';
+ezoibfh[30]='54d0fa6d5f6aabe7623cb24faa42a441';
+ezoibfh[22]='1e913e99b80640fd5b86a539e5b97c94';
+ezoibfh[6]='33dd523f8e4dda158f0aa99686dda7f2';
+ezoibfh[280]='c16fac08e79a971524b1c6834f5caad3';
+ezoibfh[140]='af063c244089b52ec5a0423a258f1f8e';
+ezoibfh[44]='a928cf2c3ad36f5e9ed2d90f655c1dc9';
+ezoibfh[18]='8de355ef1cf56b7da61277050d9957b1';
+ezoibfh[12]='14e8a85d4c42ff1db8790cbef9e33493';
+ezoibfh[10]='291d27313eb66c50243129b23df8a579';
+ezoibfh[0]='60474211daf1dfd4d90000ea01f56c30';
+ezoibfh[80]='dfa60cee6e1053fc0c9e607c8047bd28';
+ezoibfh[34]='a7a863b24978e69c4cdbb5a49be70d5e';
+ezoibfh[20]='7432360301409ae695ba255f16fbcf06';
+ezoibfh[8]='2e8b8c60843e52e5aaa1e3a52287a2bb';
+ezoibfh[260]='57914c3716312cb7e954090f0717ea25';
+ezoibfh[240]='8de2c8ca79e8623e3cb37120a35ebaa2';
+ezoibfh[90]='b355e9227b551c119a30a68852723b62';
+ezoibfh[26]='bf9a045b836005b6c23b7b0749249612';
+ezoibfh[16]='e29f69dd468d31a5514dc9b5587ce757';
+ezoibfh[14]='ad0061a38dd7c6f7bcb692aee88dfda4';
+ezoibfh[450]='6e85b37de1b1ffc2593baa5d6e4b02fc';
+ezoibfh[300]='90c3c48d0172916d27c102ea4aa9d49c';
+ezoibfh[160]='3530fcb6bcc13dc3c1712eaef7d92700';
+ezoibfh[60]='c352ba581bd3ffd8cea608cf2d55f519';
+ezoibfh[48]='8fc09e60bfd78aa82afac0405213359a';
+ezoibfh[24]='e66c30deca31b19eda212eeca1258584';
+ezoibfh[4]='9c3e4ee8eae7f1433cb2fe69b1326605';
+ezoibfh[220]='43aa1607a0c08c74b14a9039e7b909b4';
+ezoibfh[200]='86802a923a1f32517e4c5d3b6d550271';
+ezoibfh[42]='947f1d5169cc7d0f997560e34838fb04';
+var ezaxmns={};var ezaucmns={};ezaxmns["div-gpt-ad-businessknowhow_com-large-leaderboard-1-0"]=0;ezaucmns["div-gpt-ad-businessknowhow_com-large-leaderboard-1-0"]=0;ezaxmns["div-gpt-ad-businessknowhow_com-large-billboard-2-0"]=0;ezaucmns["div-gpt-ad-businessknowhow_com-large-billboard-2-0"]=0;ezaxmns["div-gpt-ad-businessknowhow_com-box-1-0"]=0;ezaucmns["div-gpt-ad-businessknowhow_com-box-1-0"]=0;ezaxmns["div-gpt-ad-businessknowhow_com-large-leaderboard-2-0"]=0;ezaucmns["div-gpt-ad-businessknowhow_com-large-leaderboard-2-0"]=0;ezaxmns["div-gpt-ad-businessknowhow_com-medrectangle-3-0"]=0;ezaucmns["div-gpt-ad-businessknowhow_com-medrectangle-3-0"]=0;if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslots.push("ezslot_2");ezslots.push("ezslot_3");ezslots.push("ezslot_1");ezslots.push("ezslot_4");ezslots.push("ezslot_0");}else{ezslots.push("ezslot_1");}</script>
+<script type="text/ez-screx">(function(){function storageAvailable(type){var storage;try{storage=window[type];var x='__storage_test__';storage.setItem(x,x);storage.removeItem(x);return true;}
+catch(e){return e instanceof DOMException&&(e.code===22||e.code===1014||e.name==='QuotaExceededError'||e.name==='NS_ERROR_DOM_QUOTA_REACHED')&&(storage&&storage.length!==0);}}
+function remove_ama_config(){if(storageAvailable('localStorage')){localStorage.removeItem("google_ama_config");}}
+remove_ama_config()})()</script>
+<script data-ezscrex="false" data-cfasync="false">__ez.ssaf=[19,16];__ez.sswp=4;__ez.ssv=18579;__ez.sshsdef=false;</script>
+<script data-ezscrex="false" data-cfasync="false">__ez.queue.addFile('/detroitchicago/easton.js', '/detroitchicago/easton.js?gcb=6&cb=2', false, ['/detroitchicago/tulsa.js'], true, false, true, false);</script>
+<script data-ezscrex="false" data-cfasync="false">(function(){if("function"===typeof window.CustomEvent)return!1;window.CustomEvent=function(c,a){a=a||{bubbles:!1,cancelable:!1,detail:null};var b=document.createEvent("CustomEvent");b.initCustomEvent(c,a.bubbles,a.cancelable,a.detail);return b}})();</script><script data-ezscrex="false" data-cfasync="false">__ez.queue.addFile('/detroitchicago/tulsa.js', '/detroitchicago/tulsa.js?gcb=191-6&cb=5', false, [], true, false, true, false);</script>
+<script type="text/javascript">var ezoicTestActive = true</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = {"ad_cache_level":2,"ad_count_adjustment":2,"ad_lazyload_version":2,"ad_location_ids":"21,0,35,34,36","ad_transform_level":0,"adx_ad_count":5,"bidder_method":1,"bidder_version":4,"city":"Cagayan de Oro","country":"PH","days_since_last_visit":-1,"display_ad_count":5,"domain_id":46971,"domain_test_group":20200406,"ds_adsize_opt_id":-1,"engaged_time_visit":0,"ezcache_level":2,"forensiq_score":-1,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"iab_category":"","iab_category_0":"53","iab_category_1":"58","iab_category_2":"602","iab_category_3":"596","is_from_recommended_pages":false,"is_return_visitor":false,"is_sitespeed":1,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"max_ads":14,"metro_code":0,"optimization_version":1,"page_ad_positions":"1103,1104,1105,1106,1107","page_view_count":0,"page_view_id":"631f33d0-38c9-4c21-5aa0-c9d324b83026","position_selection_id":39,"postal_code":"9000","pv_event_count":0,"response_time_orig":2,"serverid":"18.141.184.146:19427","state":"MSR","sub_page_ad_positions":"1103,1104,1105,1106,1107","t_epoch":1606023942,"template_id":134,"time_on_site_visit":0,"url":"https://www.businessknowhow.com/startup/business-success.htm","user_id":0,"weather_precipitation":0,"weather_summary":"","weather_temperature":0,"word_count":1877,"worst_bad_word_level":0};var _ezim_d = {"businessknowhow_com-box-1":{"adsense_stat_source_id":5,"adx_ad_count":5,"adx_stat_source_id":35,"full_id":"businessknowhow_com-box-1/2020-11-21/1940361","height":"280","position_id":1105,"sub_position_id":1105,"width":"336"},"businessknowhow_com-large-billboard-2":{"adsense_stat_source_id":5,"adx_ad_count":5,"adx_stat_source_id":35,"full_id":"businessknowhow_com-large-billboard-2/2020-11-21/1929862","height":"600","position_id":1106,"sub_position_id":1106,"width":"300"},"businessknowhow_com-large-leaderboard-1":{"adsense_stat_source_id":5,"adx_ad_count":5,"adx_stat_source_id":35,"full_id":"businessknowhow_com-large-leaderboard-1/2020-11-21/1921612","height":"280","position_id":1107,"sub_position_id":1107,"width":"336"},"businessknowhow_com-large-leaderboard-2":{"adsense_stat_source_id":5,"adx_ad_count":5,"adx_stat_source_id":35,"full_id":"businessknowhow_com-large-leaderboard-2/2020-11-21/1937062","height":"400","position_id":1104,"sub_position_id":1104,"width":"580"},"businessknowhow_com-medrectangle-3":{"adsense_stat_source_id":5,"adx_ad_count":5,"adx_stat_source_id":35,"full_id":"businessknowhow_com-medrectangle-3/2020-11-21/1937962","height":"250","position_id":1103,"sub_position_id":1103,"width":"300"}};var _ezat = {"domain_id":46971,"form_factor_id":1,"framework_id":1,"pageview_date":"2020-11-21","pageview_id":"631f33d0-38c9-4c21-5aa0-c9d324b83026","template_id":134,"url":"https://www.businessknowhow.com/startup/business-success.htm","visit_uuid":"24160bd2-9276-4c76-5f70-edd8d4c401e6"};</script><script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false' type="text/javascript">__ez.queue.addFile('banger.js', '/porpoiseant/banger.js?cb=191-6&bv=92&v=35&PageSpeed=off', true, [], true, false, false, true);</script>
+<script>__ez.queue.addFile('/detroitchicago/anaheim.js', '/detroitchicago/anaheim.js?gcb=6&cb=1', false, ['/detroitchicago/minneapolis.js'], true, false, true, false);</script>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.dot={};__ez.queue.addFile('/detroitchicago/memphis.js', '/detroitchicago/memphis.js?gcb=191-6&cb=2', false, [], true, false, true, false);__ez.queue.addFile('/detroitchicago/minneapolis.js', '/detroitchicago/minneapolis.js?gcb=191-6&cb=1', false, [], true, false, true, false);__ez.vep=(function(){var pixels=[],pxURL="/detroitchicago/grapefruit.gif";function AddPixel(vID,pixelData){if(__ez.dot.isDefined(vID)&&__ez.dot.isValid(pixelData)){pixels.push({type:'video',video_impression_id:vID,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(pixelData)});}}
+function Fire(){if(typeof document.visibilityState!=='undefined'&&document.visibilityState==="prerender"){return;}
+if(__ez.dot.isDefined(pixels)&&pixels.length>0){while(pixels.length>0){var j=5;if(j>pixels.length){j=pixels.length;}
+var pushPixels=pixels.splice(0,j);(new Image()).src=__ez.dot.getURL(pxURL)+"?orig="+(__ez.template.isOrig===true?1:0)+"&v="+btoa(JSON.stringify(pushPixels));}}
+pixels=[];}
+return{Add:AddPixel,Fire:Fire};})();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.pel=(function(){var pixels=[],pxURL="/porpoiseant/army.gif";function AddAndFirePixel(adSlot,pixelData){AddPixel(adSlot,pixelData,0,0,0,0,0);Fire();}
+function AddAndFireOrigPixel(adSlot,pixelData){AddPixel(adSlot,pixelData,0,0,0,0,0,true);Fire();}
+function GetCurrentPixels(){return pixels;}
+function AddPixel(adSlot,pixelData,revenue,est_revenue,bid_floor_filled,bid_floor_prev,stat_source_id,isOrig){if(!__ez.dot.isDefined(adSlot)||__ez.dot.isAnyDefined(adSlot.getSlotElementId,adSlot.ElementId)==false){return;}
+var ad_position_id=parseInt(__ez.dot.getTargeting(adSlot,'ap'));var impId=__ez.dot.getSlotIID(adSlot),adUnit=__ez.dot.getAdUnit(adSlot,isOrig);var compId=parseInt(__ez.dot.getTargeting(adSlot,"compid"));var lineItemId=0;var creativeId=0;var ezimData=getEzimData(adSlot);if(typeof ezimData=='object'){if(ezimData.creative_id!==undefined){creativeId=ezimData.creative_id;}
+if(ezimData.line_item_id!==undefined){lineItemId=ezimData.line_item_id;}}
+if(__ez.dot.isDefined(impId,adUnit)&&__ez.dot.isValid(pixelData)){pixels.push({type:"impression",impression_id:impId,domain_id:__ez.dot.getDID(),unit:adUnit,t_epoch:__ez.dot.getEpoch(0),revenue:revenue,est_revenue:est_revenue,ad_position:ad_position_id,ad_size:"",bid_floor_filled:bid_floor_filled,bid_floor_prev:bid_floor_prev,stat_source_id:stat_source_id,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:compId,line_item_id:lineItemId,creative_id:creativeId,data:__ez.dot.dataToStr(pixelData),is_orig:isOrig||__ez.template.isOrig,});}}
+function AddPixelById(impFullId,pixelData,isOrig){var vals=impFullId.split('/');if(__ez.dot.isDefined(impFullId)&&vals.length===3&&__ez.dot.isValid(pixelData)){var adUnit=vals[0],impId=vals[2];pixels.push({type:"impression",impression_id:impId,domain_id:__ez.dot.getDID(),unit:adUnit,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(pixelData),is_orig:isOrig||__ez.template.isOrig});}}
+function Fire(){if(typeof document.visibilityState!=='undefined'&&document.visibilityState==="prerender")return;if(__ez.dot.isDefined(pixels)&&pixels.length>0){var allPixels=[pixels.filter(function(pixel){return pixel.is_orig}),pixels.filter(function(pixel){return!pixel.is_orig})];allPixels.forEach(function(pixels){while(pixels.length>0){var isOrig=pixels[0].is_orig||false;var j=5;if(j>pixels.length){j=pixels.length;}
+var pushPixels=pixels.splice(0,j);var pixelURL=__ez.dot.getURL(pxURL)+"?orig="+(isOrig===true?1:0)+"&sts="+btoa(JSON.stringify(pushPixels));if(typeof window.isAmp!=='undefined'&&isAmp&&typeof window._ezaq!=='undefined'&&_ezaq.hasOwnProperty("domain_id")){pixelURL+="&visit_uuid="+_ezaq['visit_uuid'];}
+(new Image()).src=pixelURL;}})}
+pixels=[];}
+function getEzimData(adSlot){if(typeof _ezim_d=="undefined"){return false}
+var adUnitName=__ez.dot.getAdUnitPath(adSlot).split('/').pop();if(typeof _ezim_d==='object'&&_ezim_d.hasOwnProperty(adUnitName)){return _ezim_d[adUnitName];}
+for(var ezimKey in _ezim_d){if(ezimKey.split('/').pop()===adUnitName){return _ezim_d[ezimKey];}}
+return false;}
+return{Add:AddPixel,AddAndFire:AddAndFirePixel,AddAndFireOrig:AddAndFireOrigPixel,AddById:AddPixelById,Fire:Fire,GetPixels:GetCurrentPixels,};})();__ez.queue.addFile('/detroitchicago/raleigh.js', '/detroitchicago/raleigh.js?gcb=191-6&cb=2', false, [], true, false, true, false);__ez.queue.addFile('/detroitchicago/tampa.js', '/detroitchicago/tampa.js?gcb=191-6&cb=1', false, [], true, false, true, false);</script>
+<script data-ezscrex="false" data-pagespeed-no-defer data-cfasync='false' type="text/javascript">__ez.queue.addFile('rochester.js', '/detroitchicago/rochester.js?cb=191-6&v=9', false, [], true, false, true, true);</script>
+<link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="//www.twitter.com" crossorigin>
+<link rel="preconnect" href="//www.linkedin.com" crossorigin>
+<link rel="preconnect" href="//twitter.com" crossorigin>
+<link rel="preconnect" href="//www.instagram.com" crossorigin>
+<link rel="preconnect" href="//www.ezoic.com" crossorigin>
+<link rel="preconnect" href="//www.pinterest.com" crossorigin>
+<link rel="preconnect" href="//go.ezoic.net" crossorigin>
+<link rel="preconnect" href="//l.getsitecontrol.com" crossorigin>
+<link rel="preconnect" href="//www.careerknowhow.com" crossorigin>
+<link rel="preconnect" href="//lp.constantcontactpages.com" crossorigin>
+<link rel="preconnect" href="//www.facebook.com" crossorigin>
+<link rel="preconnect" href="//go.ezoic.net" crossorigin>
+<!-- cheetah --><style class='ezcritcss'>html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}nav{display:block}a{background-color:transparent}strong{font-weight:700}h1{margin:.67em 0;font-size:2em}img{border:0}svg:not(:root){overflow:hidden}button,input{margin:0;font:inherit;color:inherit}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}input{line-height:normal}input[type=search]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}.glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.glyphicon-search:before{content:""}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}button,input{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}img{vertical-align:middle}h1,h2{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h1,h2{margin-top:20px;margin-bottom:10px}h1{font-size:36px}h2{font-size:30px}p{margin:0 0 10px}ol,ul{margin-top:0;margin-bottom:10px}ul ul{margin-bottom:0}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-right:-15px;margin-left:-15px}input[type=search]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}input[type=search]{-webkit-appearance:none}.collapse{display:none}.caret{display:inline-block;width:0;height:0;margin-left:2px;vertical-align:middle;border-top:4px dashed;border-right:4px solid transparent;border-left:4px solid transparent}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:160px;padding:5px 0;margin:2px 0 0;font-size:14px;text-align:left;list-style:none;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.15);border-radius:4px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);box-shadow:0 6px 12px rgba(0,0,0,.175)}.dropdown-menu>li>a{display:block;padding:3px 20px;clear:both;font-weight:400;line-height:1.42857143;color:#333;white-space:nowrap}.nav{padding-left:0;margin-bottom:0;list-style:none}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}@media (min-width:768px){.navbar{border-radius:4px}}@media (min-width:768px){.navbar-header{float:left}}.navbar-collapse{padding-right:15px;padding-left:15px;overflow-x:visible;-webkit-overflow-scrolling:touch;border-top:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}@media (min-width:768px){.navbar-collapse{width:auto;border-top:0;-webkit-box-shadow:none;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}}.container>.navbar-collapse,.container>.navbar-header{margin-right:-15px;margin-left:-15px}@media (min-width:768px){.container>.navbar-collapse,.container>.navbar-header{margin-right:0;margin-left:0}}.navbar-toggle{position:relative;float:right;padding:9px 10px;margin-top:8px;margin-right:15px;margin-bottom:8px;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:4px}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}@media (min-width:768px){.navbar-toggle{display:none}}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@media (min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-left-radius:0;border-top-right-radius:0}.navbar-inverse{background-color:#222;border-color:#080808}.navbar-inverse .navbar-nav>li>a{color:#9d9d9d}.navbar-inverse .navbar-toggle{border-color:#333}.navbar-inverse .navbar-toggle .icon-bar{background-color:#fff}.navbar-inverse .navbar-collapse{border-color:#101010}.breadcrumb{padding:8px 15px;margin-bottom:20px;list-style:none;background-color:#f5f5f5;border-radius:4px}.breadcrumb>li{display:inline-block}.breadcrumb>li+li:before{padding:0 5px;color:#ccc;content:"/ "}.breadcrumb>.active{color:#777}.container:after,.container:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before,.row:after,.row:before{display:table;content:" "}.container:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after,.row:after{clear:both}@-ms-viewport{width:device-width}body{padding-top:10px;padding-bottom:20px;font-family:Roboto,Arial;font-size:16px;line-height:1.5em}.body-content{padding-left:15px;padding-right:15px}input{max-width:280px}ul{list-style-position:inside}ol{list-style-position:outside;padding-left:20px;margin-left:10px}a{color:#7ba533;font-weight:700}.logo img{height:65px}.logo{padding:5px}.navbar{border-radius:0}@media (min-width:1200px){.nav{margin-left:-30px!important}}.navbar-collapse{padding:5px}.navbar-inverse{background-color:#325f87;border-color:#325f87;padding:5px}.navbar-inverse .navbar-nav>li>a{color:#fff;font-size:18px;font-weight:400;padding-top:5px;padding-bottom:5px}.breadcrumb{padding-left:0;background-color:#fff;font-size:18px;margin-bottom:10px;margin-left:-10px}h1,h2{color:#325f87}h1{font-size:32px;font-weight:700;margin-top:10px}h2{font-size:20px;margin-bottom:5px;line-height:1em;font-weight:700}.col-fixed{position:relative;min-height:1px;padding-right:15px;padding-left:15px;float:left;width:100%}.col-fluid{position:relative;min-height:1px;padding-right:15px;padding-left:5px;float:left;width:100%}@media (min-width:768px) and (max-width:991px){.col-fixed{width:366px}.col-fluid{width:calc(100% - 366px)}}@media (min-width:992px) and (max-width:1199px){.col-fixed{width:366px}.col-fluid{width:calc(100% - 366px)}}@media (max-width:1200px){.navbar-toggle{display:block}.navbar-collapse.collapse{display:none!important}.navbar-header{float:right}.navbar-nav>li{float:none}}@media (min-width:1200px){.col-fixed{width:366px}.col-fluid{width:calc(100% - 366px)}}.box{background-color:#c2d7e8;padding:10px;color:#325f87;text-align:center;font-size:16px;font-weight:700;margin:10px}.box input{width:65%;border:0;height:25px}.box button{color:#fff;background-color:#325f87;border:0;border-radius:0;height:25px}.box div{margin:5px}.box{padding-left:0}.box li{list-style:disc;text-align:left;list-style-position:inside}.box ul{padding-left:10px}.col-fixed .box{border:1px solid #1768a4;margin:10px 0 10px 0}.col-fixed .box ul{color:#7ba533;margin-left:5px}.col-fixed .box ul li a{margin-left:-5px}.col-fluid a{color:#1768a4}.picture{font-size:10px;margin-bottom:20px}.article_summary{font-style:italic;margin:20px 0 20px 0}.last-updated{font-size:14px;font-style:italic}.right{float:right;margin-left:15px}.navbar-toggle{width:100px;border:none;margin-top:0;margin-bottom:0}.navbar-toggle div{color:#fff;float:left;position:relative;top:-5px}.navbar-toggle span{margin-left:50px}.navbar-collapse{overflow:hidden}.navbar-inverse .navbar-collapse{border-color:transparent}.nav>li>a{padding:10px 14px}.dropdown-menu{background-color:#325f87;color:#fff}.dropdown-menu>li>a{color:#fff}::placeholder{color:#d3d3d3;opacity:1}:-ms-input-placeholder{color:#d3d3d3}::-ms-input-placeholder{color:#d3d3d3}.search_box{float:right;margin-right:20px}.search_box input{border:1px solid #325f87;border-radius:0;padding:3px;width:245px}.search_box button{color:#fff;background-color:#325f87;border:1px solid #325f87;padding:3px 9px}@media (max-width:767px){.col-fluid{width:100%}.col-fixed{display:none}}ol li{list-style-position:outside}</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16 Tips for Starting and Succeeding in Your Own Business</title>
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+        <meta name="Description" content="Starting a business? Here are 16 important startup tips that will help you make your new business a success.">
+        <meta name="Keywords" content="start, business, succeed">
+        <link rel="canonical" href="https://www.businessknowhow.com/startup/business-success.htm">
+        <meta property="og:site_name" content="Business Know-How">
+        <meta property="og:title" content="16 Tips for Starting and Succeeding in Your Own Business">
+            <meta property="og:Type" content="article">
+        <meta property="og:image" content="https://www.businessknowhow.com/uploads/start-succeed-own-business.jpg">
+        <meta property="og:url" content="https://www.businessknowhow.com/startup/business-success.htm">
+        <meta property="og:description" content="Starting a business? Here are 16 important startup tips that will help you make your new business a success.">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@businessknowhow">
+        <meta name="twitter:title" content="16 Tips for Starting and Succeeding in Your Own Business">
+        <meta name="twitter:image:src" content="https://www.businessknowhow.com/uploads/start-succeed-own-business.jpg">
+        <meta name="twitter:description" content="Starting a business? Here are 16 important startup tips that will help you make your new business a success.">
+        <meta http-equiv="Strict-Transport-Security" content="max-age=604800">
+        <script type="application/ld+json">
+            {
+            "@context": "http://schema.org",
+            "@type": "Article",
+            "name": "16 Tips for Starting and Succeeding in Your Own Business",
+            "datePublished": "2012-08-15",
+            "dateModified": "2020-09-16",
+            "headline": "16 Tips for Starting and Succeeding in Your Own Business",
+            "mainEntityOfPage": {"@type":"WebPage"},
+            "publisher":{"@type": "Organization", "name" :"Business Know-How","logo":{"@type": "ImageObject","url": "https://www.businessknowhow.com/images/logo.png", "width":541,"height":139}},
+            "description": "Starting a business? Here are 16 important startup tips that will help you make your new business a success.",
+"author":{ "@type": "Person", "name" :  "by Janet Attard"},"articleBody": "Starting a business?&nbsp;Here are 16 important startup tips that will help you make your startup a success.    Image source: iStock.com   What do you need to do to start a business? There are dozens of websites including ours that have checklists that remind you of the many tasks you should perform when starting a business. Although such  checklists  are very useful because they help you remember important  startup steps , they are just To Do lists. They tell you what to do, but don't provide any tips about what makes a business successful.   Unfortunately, you don't succeed in business just by completing a list of tasks. Nor will your business be a success just because you think it's a good idea.   What will make or break your business? What determines if it will be a success?   Here are 16 tips for starting a business and making it succeed.       Know yourself, your true motivational level, the amount of money you can risk, and what you're willing to do to be successful.  Sure, we all want to make millions of dollars. But what are you willing to give up to reach that goal? How many hours a week will you work on an ongoing basis? How far out of your comfort zone are you willing to stretch? How far will your family stretch with you? To be successful, keep your business plans in line with your personal and family goals and resources.    Choose the right business for you.&nbsp; The old formula &ndash; find a need and fill it&nbsp;&ndash;&nbsp;still works. It will always work. The key to success is  finding needs that you can fill , that you want to fill, and that will produce enough income to build a profitable business.    Be sure there really is a market for what you want to sell.&nbsp; One of the biggest mistakes startups make is to assume a lot of people will want to buy a particular product or service because the business owner likes the ideas or knows one or two people who want the product or service. To minimize your risk for loss, never assume there is a market.&nbsp; Research the idea.  Talk to real potential prospects (who aren't family and friends) to find out if what you want to sell is something they'd be interested in buying, and if so, what they'd pay for the product or service.&nbsp;    Research your competitors.&nbsp;  No matter what type of business you are starting or running, you will have competitors. Even if there is no other business offering exactly what you plan to sell, there is very likely to be other products or services your target customers are using to satisfy their need.&nbsp; To be successful, you need to  research the competition  and find out as much as possible about what they sell and how they sell it. Competitive research is something you should plan on doing on an ongoing basis, too.&nbsp;If there really aren't any other competitors, it's possible there isn't a market or a real need for what you want to sell.    Plan to succeed. &nbsp;If you're not seeking investors or putting a huge sum of money into your business, you may not need an elaborate business plan, but you still do need a plan - one that specifies your goal &ndash; your destination &ndash; and then lays out at least a skeletal roadmap for how you'll get to where you want to go. The plan will change as you progress and learn more about your customers and competition, but it will still help you stay focused and headed in the right direction. Use our  business planning worksheet  to help develop that basic plan.    Know the Operational Needs.&nbsp;  Most people who are thinking about starting a business focus on what they&rsquo;ll sell and who they&rsquo;ll sell it too.&nbsp; What they often don&rsquo;t consider is how the business will actually operate. For instance, if you&rsquo;re selling items, how will they be delivered? How much customer support will be needed &ndash; either to answer questions about the product or to respond to people whose shipments haven&rsquo;t arrived? Will you need to accept credit cards? Will you invoice customers? Who will follow up to be sure you&rsquo;re paid? Who will build and maintain your website and social media presence?&nbsp; Will you be able to  use a virtual assistant  for such tasks, or will you have to hire employees? Even if you&rsquo;re starting a small personal service business, these are issues you should consider and plan for.    Don't procrastinate. &nbsp;I've heard some people advise would-be business owners to not move ahead with their business until they have investigated every last detail of the business they want to start and are absolutely sure it's all going to work and be profitable. The problem with that approach is that it leads to procrastination. No one ever really has all the pieces in place &ndash; even after they've started their business. Yes, you need to research the market, have a rudimentary plan in place, and do things like getting a tax id if needed, register with local officials, if required, etc. But if you try to make everything perfect before you launch, you may never get around to starting your business at all.&nbsp;        Start on a small scale before going all out. &nbsp;Some people believe that entrepreneurs are risk-takers. But for the most part, successful entrepreneurs don't like walking blindfolded on a limb. Instead, they take controlled risks. They test an idea on a small scale, then build on what works well, tweak what shows promise, and discard the disasters.    Don't fixate on mistakes or get demoralized by them.&nbsp; The difference between successful people and everyone else is that the  successful people learn from their mistakes and move on . They don't dwell on failure, blame the economy, curse their bad luck, or blame other people for their fate. If the path to their goal is blocked, they look for an alternate path or sometimes choose a different, more attainable goal.       .auto-style1 { 	border-width: 0px; }          Free Business Startup Checklist    Starting a business can be overwhelming! Use this free    Business Startup  Checklist   to make sure you don't miss any important steps. This  downloadable Word document lists the steps you need to take to get your business  up and running, and includes space for you to note your own comments and  deadlines. You can get the checklist free when you subscribe to the free  Business Know-How Newsletter.            &nbsp;    Learn from others.&nbsp; Find mentors, join groups with like-minded people, learn everything you can about your industry and what it takes to get from where you are to where you want to be.&nbsp;Attend industry conferences. Take training courses when they are available. Buy courses offered by experts. You'll save a tremendous amount of trial and error by learning from people who have been there before.    Think of what you do AS a business. &nbsp;Keep track of  income and expenses , keep business money separate from personal funds, find out what regulations your business needs to abide by.    Understand the difference between working for yourself and building an ongoing business.&nbsp; If you want to build a business, you need to develop systems and methods that allow you to hire other people to DO the work of the business while you plan it. You limit the potential for growth if you don't bring in other people to work for you.    Get to know investors.&nbsp; If the business you are starting will need investors to grow, do what you can to  find out what investors are looking for  and where to find those who might invest in your kind of business. Local angel and venture capital groups are a good place to start &ndash; attend meetings they hold or meetings that investors are speaking at.    Put yourself out there. &nbsp;Ask for what you want (in a polite way.) I started my online business by participating online on GE's GEnie online service. When I was ready to send them a proposal to run a small business area, I could not only talk about my credentials in general, but point to places I was already contributing to their service. I became one of the early content providers to America Online because I picked up the phone and made a cold call. I wound up with a new consulting client after I struck up a conversation with a woman sitting next to me on an airplane. Remember, people like to do business with people they know. Get the ball rolling, and keep it rolling by continually  reaching out and introducing yourself to new people.     Embrace Digital Marketing.&nbsp; Even if you&rsquo;re running a local business, you need a comprehensive digital presence. At a minimum, you need a professional-looking website, an email list that lets you communicate with customers and prospects on a regular basis and presence on the social media channels that your customers frequent. While you may get many of your customers by word of mouth, referrals, or networking, you still need a strong digital presence. The reason: prospective customers are likely to look you up on the web before they decide whether or not to contact you. Coupons, special offers, and practical information sent to your email list can encourage customers and prospects to buy from you or make repeat purchases.    Never stop learning and trying new things.&nbsp; What's profitable now, won't necessarily be profitable next year or 10 years from now. So, don't let yourself fall into the this is the way I've always done things rut. Keep your eyes and ears open for new things. Are there newer or better ways to market your products and services? Are customers asking for something you're not offering? Is there a different type of customer you should be targeting? Get answers by reading everything you can about your industry and listening to your customers.&nbsp;        Related:        4 Keys to Small Business Success       How to Start a Business           &#169; 2020 Attard Communications, Inc. All Rights Reserved. May not be reproduced, reprinted or redistributed without written permission from Attard Communications, Inc.   ","articleSection": "Starting A Business",            "image":{"@type": "ImageObject","url": "https://www.businessknowhow.com/uploads/start-succeed-own-business.jpg", "width":250,"height":167}
+
+            }
+
+        </script>
+    <link rel="alternate" type="application/rss+xml" title="Business Know-How Small Business Newsletter" href="https://www.businessknowhow.com/latest-articles-rss.ashx">
+    <link rel="alternate" type="application/rss+xml" title="Small Business Blog | Business Know-How® » Feed" href="//www.businessknowhow.com/blog/feed/">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="preload" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"></noscript>
+
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-31979-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- End Google Analytics -->
+    <!-- Facebook Pixel Code -->
+    <script type="text/ez-screx">
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '315333042240249'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+        fbq('track', 'ViewContent');
+
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=315333042240249&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+    <!--constand contact-->
+    <script type="text/ez-screx">
+        // Handles Constant Contact Opt In Form
+        function sendCCOptIn(eaVal) {
+            var mVal = "1011015843403";
+            var pVal = "oi";
+            if (eaVal == '') {
+                alert('Email address is required!');
+                return false;
+            }
+            var url = 'http://visitor.constantcontact.com/d.jsp?m=' + mVal + '&p=' + pVal + '&ea=' + eaVal;
+            window.open(url, null, 'Constant Contact Email Signup', false);
+        }
+    </script>
+
+    <link href="/Content/css?v=efc8dX8dxcWyD3Rv-SHcg70Sk9NBcR3YHuMOSL52lh01" rel="preload" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;">
+<noscript><link href="/Content/css?v=efc8dX8dxcWyD3Rv-SHcg70Sk9NBcR3YHuMOSL52lh01" rel="stylesheet"></noscript>
+
+
+    <script src="/bundles/modernizr?screx=1&sxcb=4a&v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1" type="text/ez-screx"></script>
+
+
+	<script type="text/ez-screx">
+	    (function(c,l,a,r,i,t,y){
+	        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+	        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+	        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+	    })(window, document, "clarity", "script", "3yaw407pnf");
+	</script>
+
+<style>.ezoic-ad.medrectangle-3 { display:block !important;float:none !important;margin-bottom:10px !important;margin-left:0px !important;margin-right:0px !important;margin-top:10px !important;min-height:250px;min-width:300px;text-align:center !important; }
+.ezoic-ad.large-leaderboard-2 { display:block !important;float:none;margin-bottom:20px !important;margin-left:0px !important;margin-right:0px !important;margin-top:20px !important;min-height:400px;min-width:580px;text-align:center !important; }
+.ezoic-ad.box-1 { display:block !important;float:none;margin-bottom:20px !important;margin-left:0px !important;margin-right:0px !important;margin-top:20px !important;min-height:280px;min-width:336px;text-align:center !important; }
+.ezoic-ad.large-billboard-2 { display:block !important;float:none;margin-bottom:20px !important;margin-left:0px !important;margin-right:0px !important;margin-top:20px !important;min-height:600px;min-width:300px;text-align:center !important; }
+.ezoic-ad.large-leaderboard-1 { display:block !important;float:none !important;margin-bottom:20px !important;margin-left:0px !important;margin-right:0px !important;margin-top:20px !important;min-height:280px;min-width:336px;text-align:center !important; }
+.ezoic-ad{display:inline-block;}
+.ezoic-ad .ezoic-adl {border:1px #c0c0c047 solid;border-radius:6px;overflow:hidden;background:url("/utilcave_com/l.svg") no-repeat center center}.ezoic-ad .ezfound,.ezmob-footer .ezoic-ad .ezoic-ad,.ezoic-ad-adaptive > .ezoic-ad, .ezoic-ad-rl {background:0 0;border-radius:0;border:none}
+.adtester-container-118,.adtester-container-121,.adtester-container-108,.adtester-container-109,.adtester-container-110,.adtester-container-120,.adtester-container-145,.adtester-container-147,.adtester-container-117,.adtester-container-127,.adtester-container-129,.adtester-container-141,.adtester-container-114,.adtester-container-119,.adtester-container-111,.adtester-container-113,.adtester-container-125,.adtester-container-101,.adtester-container-149,.adtester-container-150,.adtester-container-123,.adtester-container-124,.adtester-container-128,.adtester-container-148,.adtester-container-131,.adtester-container-133,.adtester-container-130,.adtester-container-126,.adtester-container-132,.adtester-container-112,.adtester-container-144,.adtester-container-116,.adtester-container-115,.adtester-container-143,.adtester-container-122,.adtester-container-100{display:none!important}
+.ezoic-floating-bottom { display: none!important; }</style>
+<script data-ezscrex="false" data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-97835788-39";</script>
+<script data-ezscrex="false" data-cfasync="false" type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(function(){
+	_gat._createTracker('UA-97835788-39', 'e');
+});
+_gaq.push(function(){
+	_gat._createTracker('UA-38339005-1', 'f');
+});
+_gaq.push(['e._setDomainName', 'businessknowhow.com']);
+_gaq.push(['f._setDomainName', 'businessknowhow.com']);
+_gaq.push(['e._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['e._setCustomVar',2,'t','134',3]);
+_gaq.push(['e._setCustomVar',3,'rid','0',2]);
+_gaq.push(['e._setCustomVar',4,'bra','mod72-c',3]);
+_gaq.push(['e._setAllowAnchor',true]);
+_gaq.push(['e._setSiteSpeedSampleRate', 10]);
+_gaq.push(['f._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['f._setCustomVar',2,'domain','businessknowhow.com',3]);
+_gaq.push(['f._setSiteSpeedSampleRate', 20]);
+_gaq.push(['e._trackPageview']);
+_gaq.push(['f._trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">var ezouid = "1";</script><base href="https://www.businessknowhow.com/startup/business-success.htm"><script type='text/javascript'>
+var ezoTemplate = 'pub_site';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script><!-- START EZHEAD -->
+<script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 46971;
+var ezdomain = 'businessknowhow.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>
+__ez.queue.addFile('__ezf_ezosuigeneris', '//g.ezoic.net/ezosuigeneris.js', true, [], true, false, false, false);
+var __ez_ezosuigenerisEvt = function() { if(typeof(ezosuigeneris) != 'undefined'){__ez.bit.AddAndFire(_ezaq['page_view_id'], [(new __ezDotData('universal_user_id', ezosuigeneris))]); }};
+__ez.queue.addFunc('__ez_ezosuigenerisEvt', '__ez_ezosuigenerisEvt', null, false, ['__ezf_ezosuigeneris','/detroitchicago/minneapolis.js','/detroitchicago/memphis.js'], false, false, false, false);</script><script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>__ez.queue.addFile('__ezf_ezosuigenerisc', '//g.ezoic.net/ezosuigenerisc.js?nogen=1', true, ["/detroitchicago/boise.js"], true, false, false, false);</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/ez-screx"></script>
+
+<script type="text/ez-screx">
+(function(){
+	var div = document.createElement('div');
+	div.id = 'dmo1';
+	div.style = 'display:none';
+	var s = document.createElement('script');
+	var code = `var googleAdClient = "ca-pub-6396844742497208";
+			  window.google_ad_client = googleAdClient;
+			  /* dmo */
+			  window.google_ad_slot = "dmo";
+			  window.google_ad_width = 88;
+			  window.google_ad_height = 31;
+			  (adsbygoogle = window.adsbygoogle || []).push({
+				  google_ad_client: googleAdClient,
+				  enable_page_level_ads: false
+			  });`;
+	var ss = document.createElement('script');
+	ss.src = '//pagead2.googlesyndication.com/pagead/show_ads.js';
+	ss.type = 'text/ez-screx';
+	ss.async = false;
+	try {
+		s.appendChild(document.createTextNode(code));
+	} catch (e) {
+		s.text = code;
+	}
+	div.appendChild(s);
+	div.appendChild(ss);
+	if (document.readyState == 'interactive' || document.readyState == 'complete') {
+		document.body.appendChild(div);
+	} else {
+		document.addEventListener("DOMContentLoaded", function(event) {
+			document.body.appendChild(div);
+		});
+	}
+}());
+</script>
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl(pvID, rv) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_46971=" + new Date().getTime() + "|" + pvID + "|" + rv + "; " + expires, 3);
+}
+function attach_ezolpl(pvID, rv) {
+    if (document.readyState === "complete") {
+        create_ezolpl(pvID, rv);
+    }
+    if(window.attachEvent) {
+        window.attachEvent("onload", create_ezolpl, pvID, rv);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl(pvID, rv);
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl.bind(null, pvID, rv);
+        }
+    }
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["631f33d0-38c9-4c21-5aa0-c9d324b83026", "false"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script>
+<script data-cfasync="false">__ez.queue.addFile('/detroitchicago/dayton.js', '/detroitchicago/dayton.js?gcb=6&cb=3', false, [], true, false, true, false);</script></head>
+<body>
+
+    <div class="logo container">
+        <a href="/">
+            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22541%22%20height%3D%22139%22%3E%3C%2Fsvg%3E" alt="Business Know-How Small Business Tips and Strategies that Work" title="Business Know-How Small Business Tips and Strategies that Work" class="ezlazyload" data-ezsrc="/images/logo.png">
+        </a>
+        <div class="search_box">
+            <input id="text_search" placeholder="Search" aria-label="Enter search term"><button id="btn_search"><span class="glyphicon glyphicon-search" onclick="setSearch(); return false;"></span></button>
+            <script type="text/javascript" data-pagespeed-no-defer>
+                function setSearch() {
+                    //if ($('#text_search').val() == "") {
+                    if (document.getElementById('text_search').value == "") {
+                        alert("Please enter a search term");
+                    }
+                    else {
+                        window.location = "/searchresults.htm?q=" + document.getElementById('text_search').value.replace(" ", "+")
+                    }
+                }
+
+            </script>
+        </div>
+    </div>
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" id="mob_menu_button" class="navbar-toggle" data-toggle="collapse" data-target=".xxnavbar-collapse">
+                    <div>Menu</div>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+            <div class="navbar-collapse collapse" id="nav_bar">
+                
+                <nav>
+                    <ul class="nav navbar-nav">
+                    <li><a href="/businessideas/">Business Ideas</a></li>
+                    <li><a href="/startup/">Starting a Business</a></li>
+                    <li><a href="/marketing/">Marketing</a></li>
+                    <li><a href="/internet/">Internet Marketing</a></li>
+                    <li><a href="/manage/">Management</a></li>
+                    <li><a href="/money/">Finance</a></li>
+                    <li><a href="/growth/">Leadership</a></li>
+                    <li><a class="xdropdown-toggle" data-toggle="xdropdown" href="#" id="moreMenu">More
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu" id="moreSubMenu">
+						 <li><a href="/homeoffice/">Home Office</a></li> 
+<li><a href="/legal/">Legal Issues</a></li> 
+<li><a href="/directmail/">Mailing &amp; Shipping</a></li> 
+						  <li><a href="/security/">Security</a></li>
+						  <li><a href="/technology/">Technology</a></li>
+
+						  <li><a href="/tips/">Tips</a></li>
+
+						  <li><a href="/marketplace/">Marketplace</a></li>
+ <li><a href="http://www.careerknowhow.com" rel="nofollow">CareerKnowhow.com </a></li>
+
+						  
+						</ul>
+					</li>
+                </ul>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" data-pagespeed-no-defer>
+        var menu_open = 0;
+        var m = document.getElementById('moreMenu');
+        var sub_m = document.getElementById('moreSubMenu');
+        m.onclick = function () {
+            if (menu_open == 0) {
+                menu_open = 1;
+                sub_m.style.display = 'block';
+                nav_bar.setAttribute("style", "height:500px");
+            }
+            else {
+                menu_open = 0;
+                sub_m.style.display = 'none';
+            }
+        }
+
+        var mobile_open = 0;
+        var mob_menu_button = document.getElementById('mob_menu_button');
+        var nav_bar = document.getElementById('nav_bar');
+        mob_menu_button.onclick = function () {
+            if (mobile_open == 0) {
+                mobile_open = 1;
+                nav_bar.classList.remove('collapse');
+            }
+            else {
+                mobile_open = 0;
+                nav_bar.classList.add('collapse');
+            }
+        }
+
+
+        //$('.xdropdown-toggle').click(function () {
+        //    $('.dropdown-menu').toggle();
+        //});
+    </script>
+    <div class="container body-content">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/startup/">Starting A Business</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">16 Tips for Starting and Succeeding in Your Own Business</li>
+
+            </ol>
+        </nav>
+        
+
+
+
+<div class="row">
+    <div class="col-fluid">
+
+        <center><h1>16 Tips for Starting and Succeeding in Your Own Business</h1></center>
+            <center>by Janet Attard</center>
+            <div class="last-updated">Last Updated Wednesday, September 16, 2020</div>
+            <div class="article_summary">Starting a business?&nbsp;Here are 16 important startup tips that will help you make your startup a success.</div>
+            <!--content 4-->
+<div style="width: 350px;" class="picture right"><img style="margin: 3px; float: right;" title="tips for starting a successful business" alt="starting and succeeding in a business" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22778%22%3E%3C%2Fsvg%3E" width="350" height="223" class="ezlazyload" data-ezsrc="https://www.businessknowhow.com/uploads/start-succeed-own-business.jpg"> <br>Image source: iStock.com</div>
+<p>What do you need to do to start a business? There are dozens of websites including ours that have checklists that remind you of the many tasks you should perform when starting a business. Although such <a href="/startup/checklist.htm" title="business startup checklist" target="_blank">checklists</a> are very useful because they help you remember important <a href="/startup/how-to-start-business.htm" title="how to start a business - important steps" target="_blank">startup steps</a>, they are just To Do lists. They tell you what to do, but don't provide any tips about what makes a business successful.</p>
+<p>Unfortunately, you don't succeed in business just by completing a list of tasks. Nor will your business be a success just because you think it's a good idea.</p>            <style>
+                .col-fluid {
+                    max-width: 700px;
+                }
+
+                @media (max-width: 991px) {
+                    .col-fluid img, .picture {
+                        width: 100% !important;
+                        height: auto !important;
+                    }
+                }
+            </style>
+            <!-- ad 1-->
+<div style="width:100%;padding: 20px 0 20px 0;"><!-- <span id="ezoic-pub-ad-placeholder-116" class="ezoic-adpicker-ad" data-ezadblocked='true'></span> --><!-- placeholder 116 blocked.  Reason : no sizes --> 
+
+
+
+<!-- Ezoic - Article Top Rectangle - under_first_paragraph -->
+<span id="ezoic-pub-ad-placeholder-103"></span><span style='display:block !important;float:none !important;margin-bottom:10px !important;margin-left:0px !important;margin-right:0px !important;margin-top:10px !important;min-height:250px;min-width:300px;text-align:center !important;' class='ezoic-ad medrectangle-3 adtester-container adtester-container-103' data-ez-name='businessknowhow_com-medrectangle-3'><span id='div-gpt-ad-businessknowhow_com-medrectangle-3-0' ezaw='300' ezah='250' style='position:relative;z-index:0;display:inline-block;min-height:250px;min-width:300px;' class='ezoic-ad'><script data-ezscrex='false' data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[300,250],'businessknowhow_com-medrectangle-3','ezslot_0',103,'0','0']));</script></span></span>
+<!-- End Ezoic - Article Top Rectangle - under_first_paragraph -->
+
+
+
+
+</div>            <!--rest of content 4-->
+
+<p>What will make or break your business? What determines if it will be a success?</p>
+<h2>Here are 16 tips for starting a business and making it succeed.</h2>
+<div><ol>
+<li><strong>Know yourself, your true motivational level, the amount of money you can risk, and what you're willing to do to be successful.</strong> Sure, we all want to make millions of dollars. But what are you willing to give up to reach that goal? How many hours a week will you work on an ongoing basis? How far out of your comfort zone are you willing to stretch? How far will your family stretch with you? To be successful, keep your business plans in line with your personal and family goals and resources.</li>
+<li><strong>Choose the right business for you.&nbsp;</strong>The old formula – find a need and fill it&nbsp;–&nbsp;still works. It will always work. The key to success is <a href="/startup/find-business-ideas.htm" title="Finding business needs to fill" target="_blank">finding needs that you can fill</a>, that you want to fill, and that will produce enough income to build a profitable business.</li>
+<li><strong>Be sure there really is a market for what you want to sell.&nbsp;</strong>One of the biggest mistakes startups make is to assume a lot of people will want to buy a particular product or service because the business owner likes the ideas or knows one or two people who want the product or service. To minimize your risk for loss, never assume there is a market.&nbsp;<a href="/startup/marketresearch.htm" title="how to conduct market research" target="_blank">Research the idea.</a> Talk to real potential prospects (who aren't family and friends) to find out if what you want to sell is something they'd be interested in buying, and if so, what they'd pay for the product or service.&nbsp;</li>
+<li><b>Research your competitors.&nbsp;</b> No matter what type of business you are starting or running, you will have competitors. Even if there is no other business offering exactly what you plan to sell, there is very likely to be other products or services your target customers are using to satisfy their need.&nbsp; To be successful, you need to <a href="/marketing/keep-tabs-competition.htm">research the competition</a> and find out as much as possible about what they sell and how they sell it. Competitive research is something you should plan on doing on an ongoing basis, too.&nbsp;If there really aren't any other competitors, it's possible there isn't a market or a real need for what you want to sell.</li>
+<li><strong>Plan to succeed.</strong>&nbsp;If you're not seeking investors or putting a huge sum of money into your business, you may not need an elaborate business plan, but you still do need a plan - one that specifies your goal – your destination – and then lays out at least a skeletal roadmap for how you'll get to where you want to go. The plan will change as you progress and learn more about your customers and competition, but it will still help you stay focused and headed in the right direction. Use our <a href="/startup/planningwks.htm" title="business planning worksheet" target="_blank">business planning worksheet</a> to help develop that basic plan.</li>
+<li><b>Know the Operational Needs.&nbsp;</b> Most people who are thinking about starting a business focus on what they’ll sell and who they’ll sell it too.&nbsp; What they often don’t consider is how the business will actually operate. For instance, if you’re selling items, how will they be delivered? How much customer support will be needed – either to answer questions about the product or to respond to people whose shipments haven’t arrived? Will you need to accept credit cards? Will you invoice customers? Who will follow up to be sure you’re paid? Who will build and maintain your website and social media presence?&nbsp; Will you be able to <a href="/manage/virtualassistant.htm" title="reasons for using a virtual assistant" target="_blank">use a virtual assistant</a> for such tasks, or will you have to hire employees? Even if you’re starting a small personal service business, these are issues you should consider and plan for.</li>
+<li><strong>Don't procrastinate.</strong>&nbsp;I've heard some people advise would-be business owners to not move ahead with their business until they have investigated every last detail of the business they want to start and are absolutely sure it's all going to work and be profitable. The problem with that approach is that it leads to procrastination. No one ever really has all the pieces in place – even after they've started their business. Yes, you need to research the market, have a rudimentary plan in place, and do things like getting a tax id if needed, register with local officials, if required, etc. But if you try to make everything perfect before you launch, you may never get around to starting your business at all.&nbsp;</li>
+</ol></div>            <!--content 5-->
+<ol start="8">
+<li><strong>Start on a small scale before going all out.</strong>&nbsp;Some people believe that entrepreneurs are risk-takers. But for the most part, successful entrepreneurs don't like walking blindfolded on a limb. Instead, they take controlled risks. They test an idea on a small scale, then build on what works well, tweak what shows promise, and discard the disasters.</li>
+<li><strong>Don't fixate on mistakes or get demoralized by them.&nbsp;</strong>The difference between successful people and everyone else is that the <a href="/manage/failurelessons.htm">successful people learn from their mistakes and move on</a>. They don't dwell on failure, blame the economy, curse their bad luck, or blame other people for their fate. If the path to their goal is blocked, they look for an alternate path or sometimes choose a different, more attainable goal.<br><br>
+
+<style type="text/css">
+.auto-style1 {
+	border-width: 0px;
+}
+</style>
+
+
+<div style="border: 1px solid #a1a1a1; padding: 15px; border-radius: 5px; background-color: #f8f8f8;">
+<p><strong>Free Business Startup Checklist</strong></p>
+<p>Starting a business can be overwhelming! Use this free <strong>
+<a href="https://lp.constantcontactpages.com/su/VwSVKHd/startupchecklist">Business Startup 
+Checklist</a></strong> to make sure you don't miss any important steps. This 
+downloadable Word document lists the steps you need to take to get your business 
+up and running, and includes space for you to note your own comments and 
+deadlines. You can get the checklist free when you subscribe to the free 
+Business Know-How Newsletter.</p>
+<p class="auto-style2">
+<a href="https://lp.constantcontactpages.com/su/VwSVKHd/startupchecklist" target="_blank">
+<img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22293%22%20height%3D%2248%22%3E%3C%2Fsvg%3E" width="293" height="48" style="margin: 0px;" alt="Request your free Business Startup Checklist" title="Request your free Job Analysis Template" class="ezlazyload auto-style1" data-ezsrc="https://www.businessknowhow.com/uploads/checklist-button.jpg"></a></p>
+</div><br>&nbsp;</li>
+<li><strong>Learn from others.&nbsp;</strong>Find mentors, join groups with like-minded people, learn everything you can about your industry and what it takes to get from where you are to where you want to be.&nbsp;Attend industry conferences. Take training courses when they are available. Buy courses offered by experts. You'll save a tremendous amount of trial and error by learning from people who have been there before.</li>
+<li><strong>Think of what you do AS a business.</strong>&nbsp;Keep track of <a href="/money/bookkeeping.htm" target="_blank">income and expenses</a>, keep business money separate from personal funds, find out what regulations your business needs to abide by.</li>
+<li><strong>Understand the difference between working for yourself and building an ongoing business.&nbsp;</strong>If you want to build a business, you need to develop systems and methods that allow you to hire other people to DO the work of the business while you plan it. You limit the potential for growth if you don't bring in other people to work for you.</li>
+<li><strong>Get to know investors.&nbsp;</strong>If the business you are starting will need investors to grow, do what you can to <a href="/money/investors.htm">find out what investors are looking for</a> and where to find those who might invest in your kind of business. Local angel and venture capital groups are a good place to start – attend meetings they hold or meetings that investors are speaking at.</li>
+<li><strong>Put yourself out there.</strong>&nbsp;Ask for what you want (in a polite way.) I started my online business by participating online on GE's GEnie online service. When I was ready to send them a proposal to run a small business area, I could not only talk about my credentials in general, but point to places I was already contributing to their service. I became one of the early content providers to America Online because I picked up the phone and made a cold call. I wound up with a new consulting client after I struck up a conversation with a woman sitting next to me on an airplane. Remember, people like to do business with people they know. Get the ball rolling, and keep it rolling by continually <a href="/marketing/networking-build-business.htm" title="how to use networking to build a business" target="_blank">reaching out and introducing yourself to new people.</a></li>
+<li><strong>Embrace Digital Marketing.&nbsp;</strong>Even if you’re running a local business, you need a comprehensive digital presence. At a minimum, you need a professional-looking website, an email list that lets you communicate with customers and prospects on a regular basis and presence on the social media channels that your customers frequent. While you may get many of your customers by word of mouth, referrals, or networking, you still need a strong digital presence. The reason: prospective customers are likely to look you up on the web before they decide whether or not to contact you. Coupons, special offers, and practical information sent to your email list can encourage customers and prospects to buy from you or make repeat purchases.</li>
+<li><strong>Never stop learning and trying new things.&nbsp;</strong>What's profitable now, won't necessarily be profitable next year or 10 years from now. So, don't let yourself fall into the "this is the way I've always done things" rut. Keep your eyes and ears open for new things. Are there newer or better ways to market your products and services? Are customers asking for something you're not offering? Is there a different type of customer you should be targeting? Get answers by reading everything you can about your industry and listening to your customers.&nbsp;</li>
+</ol>
+<blockquote>
+<p><strong>Related:</strong></p>
+<ul>
+<li><strong><a href="/startup/succeed.htm">4 Keys to Small Business Success</a></strong></li>
+<li><a href="/startup/how-to-start-business.htm"><strong>How to Start a Business</strong></a></li>
+</ul>
+</blockquote>
+<p></p><div><p>© 2020 Attard Communications, Inc. All Rights Reserved. May not be reproduced, reprinted or redistributed without written permission from Attard Communications, Inc.</p></div><p></p>            <!--content 6 author-->
+<p><strong>About the author:<br> </strong>Janet Attard is the founder of the award-winning&nbsp; <a href="https://www.businessknowhow.com/">Business Know-How</a> small business web site and information resource. Janet&nbsp;is also the author of <em>The Home Office And Small Business Answer Book </em>and of<em> Business Know-How: An Operational Guide For Home-Based and Micro-Sized Businesses with Limited Budgets.</em>&nbsp; Follow Janet on <a href="https://www.twitter.com/JanetAttard">Twitter</a> and on <a href="https://www.linkedin.com/in/janetattard/">LinkedIn</a></p>            <!-- ad 2-->
+<div style="width:100%;padding: 20px 0 20px 0;"><!-- <span id="ezoic-pub-ad-placeholder-117" class="ezoic-adpicker-ad" data-ezadblocked='true'></span> --><!-- placeholder 117 blocked.  Reason : no sizes --> 
+
+
+<!-- Ezoic - Article Middle Rectangle - mid_content -->
+<span id="ezoic-pub-ad-placeholder-104"></span><span style='display:block !important;float:none;margin-bottom:20px !important;margin-left:0px !important;margin-right:0px !important;margin-top:20px !important;min-height:400px;min-width:580px;text-align:center !important;' class='ezoic-ad large-leaderboard-2 adtester-container adtester-container-104' data-ez-name='businessknowhow_com-large-leaderboard-2'><span id='div-gpt-ad-businessknowhow_com-large-leaderboard-2-0' ezaw='580' ezah='400' style='position:relative;z-index:0;display:inline-block;width:100%;max-width:1200px;margin-left:auto !important;margin-right:auto !important;min-height:400px;min-width:580px;' class='ezoic-ad'><script data-ezscrex='false' data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[580,400],'businessknowhow_com-large-leaderboard-2','ezslot_4',104,'0','0']));</script></span></span>
+<!-- End Ezoic - Article Middle Rectangle - mid_content -->
+
+
+
+</div>
+
+
+            <!-- ad 3-->
+&nbsp;
+
+
+
+    </div>
+    <div class="col-fixed">
+        <div class="box" style="background-color:white;">
+            Follow us<br>
+            <a href="https://www.facebook.com/BizKnowHow" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2247%22%20height%3D%2245%22%3E%3C%2Fsvg%3E" border="0" class="ezlazyload" data-ezsrc="/images/social_r1_c1.png"></a>
+            <a href="https://twitter.com/intent/follow?source=followbutton&amp;variant=1.0&amp;screen_name=JanetAttard" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2246%22%20height%3D%2245%22%3E%3C%2Fsvg%3E" border="0" class="ezlazyload" data-ezsrc="/images/social_r1_c2.png"></a>
+            <a href="https://www.linkedin.com/in/janetattard" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2247%22%20height%3D%2245%22%3E%3C%2Fsvg%3E" border="0" class="ezlazyload" data-ezsrc="/images/social_r1_c3.png"></a>
+            <a href="https://www.pinterest.com/businessknowhow/" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2247%22%20height%3D%2245%22%3E%3C%2Fsvg%3E" class="ezlazyload" data-ezsrc="/images/social_r1_c4.png"></a>
+            <a href="https://www.instagram.com/businessknowhow/" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2243%22%20height%3D%2245%22%3E%3C%2Fsvg%3E" class="ezlazyload" data-ezsrc="/images/social_r1_c5.png"></a>
+        </div>
+        <div class="box">
+            Free business tips to your inbox
+            <div>
+                <input id="newsletter" placeholder="email address" aria-label="Email for newsletter"><button id="save_newsletter" onclick="sendCCOptIn($(&quot;#newsletter&quot;).val()); return false;">Sign Up</button>
+            </div>
+        </div>
+        <div class="box" style="background-color:white;">
+            Popular
+<ul><li><a href="https://www.businessknowhow.com/money/start-business-no-money.htm">Start a Business with No Money</a> </li><li><a href="https://www.businessknowhow.com/money/startup-money.htm">How To Get Startup Money</a></li><li><a href="https://www.businessknowhow.com/startup/business-success.htm">New Business Success Tips</a> </li></ul>
+        </div>
+
+<!--
+******************************
+***** Start Ad 1*****
+******************************
+-->
+<!-- Ezoic - Right Sidebar Top - sidebar -->
+<span id="ezoic-pub-ad-placeholder-105"></span><span style='display:block !important;float:none;margin-bottom:20px !important;margin-left:0px !important;margin-right:0px !important;margin-top:20px !important;min-height:280px;min-width:336px;text-align:center !important;' class='ezoic-ad box-1 adtester-container adtester-container-105' data-ez-name='businessknowhow_com-box-1'><span id='div-gpt-ad-businessknowhow_com-box-1-0' ezaw='336' ezah='280' style='position:relative;z-index:0;display:inline-block;width:100%;max-width:1200px;margin-left:auto !important;margin-right:auto !important;min-height:280px;min-width:336px;' class='ezoic-ad'><script data-ezscrex='false' data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[336,280],'businessknowhow_com-box-1','ezslot_1',105,'0','0']));</script></span><span style='width:336px;display:block;height:14px;margin:auto' class='reportline'><span style='text-align:center;font-size: smaller;float:left;line-height:normal;'><a href='https://www.ezoic.com/what-is-ezoic/' target='_blank' rel='noopener noreferrer nofollow' style='cursor:pointer'/><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2287%22%20height%3D%2218%22%3E%3C%2Fsvg%3E" alt="Ezoic" ;="" style="height:12px !important; padding:2px !important; border:0px !important; cursor:pointer !important; width: 58px !important; margin:0 !important; box-sizing: content-box !important;" class="ezlazyload" data-ezsrc="https://go.ezoic.net/utilcave_com/img/ezoic.png"/></a></span><span class='ez-report-ad-button' name='?pageview_id=631f33d0-38c9-4c21-5aa0-c9d324b83026&ad_position_id=105&impression_group_id=businessknowhow_com-box-1/2020-11-21/1940361&ad_size=336x280&domain_id=46971&url=https://www.businessknowhow.com/startup/business-success.htm' style='cursor: pointer!important; font-size:12px !important;color: #a5a5a5 ;float:right;text-decoration:none !important;font-family:arial !important;line-height:normal;'>report this ad</span></span></span>
+<!-- End Ezoic - Right Sidebar Top - sidebar -->
+
+
+<!--
+******************************
+***** end ad 1*****
+******************************
+--><!--
+******************************
+***** start ad 2*****
+******************************
+
+<!-- Ezoic - Right Sidebar Middle (2nd ad) - sidebar_middle -->
+<span id="ezoic-pub-ad-placeholder-106"></span><span style='display:block !important;float:none;margin-bottom:20px !important;margin-left:0px !important;margin-right:0px !important;margin-top:20px !important;min-height:600px;min-width:300px;text-align:center !important;' class='ezoic-ad large-billboard-2 adtester-container adtester-container-106' data-ez-name='businessknowhow_com-large-billboard-2'><span id='div-gpt-ad-businessknowhow_com-large-billboard-2-0' ezaw='300' ezah='600' style='position:relative;z-index:0;display:inline-block;width:100%;max-width:1200px;margin-left:auto !important;margin-right:auto !important;min-height:600px;min-width:300px;' class='ezoic-ad'><script data-ezscrex='false' data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[300,600],'businessknowhow_com-large-billboard-2','ezslot_3',106,'0','0']));</script></span><span style='width:300px;display:block;height:14px;margin:auto' class='reportline'><span style='text-align:center;font-size: smaller;float:left;line-height:normal;'><a href='https://www.ezoic.com/what-is-ezoic/' target='_blank' rel='noopener noreferrer nofollow' style='cursor:pointer'/><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2287%22%20height%3D%2218%22%3E%3C%2Fsvg%3E" alt="Ezoic" ;="" style="height:12px !important; padding:2px !important; border:0px !important; cursor:pointer !important; width: 58px !important; margin:0 !important; box-sizing: content-box !important;" class="ezlazyload" data-ezsrc="https://go.ezoic.net/utilcave_com/img/ezoic.png"/></a></span><span class='ez-report-ad-button' name='?pageview_id=631f33d0-38c9-4c21-5aa0-c9d324b83026&ad_position_id=106&impression_group_id=businessknowhow_com-large-billboard-2/2020-11-21/1929862&ad_size=300x600&domain_id=46971&url=https://www.businessknowhow.com/startup/business-success.htm' style='cursor: pointer!important; font-size:12px !important;color: #a5a5a5 ;float:right;text-decoration:none !important;font-family:arial !important;line-height:normal;'>report this ad</span></span></span>
+<!-- End Ezoic - Right Sidebar Middle (2nd ad) - sidebar_middle -->
+
+<!--
+******************************
+***** end ad 2*****
+******************************
+-->
+
+<!--
+******************************
+***** Start ad 3*****
+******************************
+
+<!-- Ezoic - Right Sidebar Bottom (3rd ad) - sidebar_bottom -->
+<span id="ezoic-pub-ad-placeholder-107"></span><span style='display:block !important;float:none !important;margin-bottom:20px !important;margin-left:0px !important;margin-right:0px !important;margin-top:20px !important;min-height:280px;min-width:336px;text-align:center !important;' class='ezoic-ad large-leaderboard-1 adtester-container adtester-container-107' data-ez-name='businessknowhow_com-large-leaderboard-1'><span id='div-gpt-ad-businessknowhow_com-large-leaderboard-1-0' ezaw='336' ezah='280' style='position:relative;z-index:0;display:inline-block;width:100%;max-width:1200px;margin-left:auto !important;margin-right:auto !important;min-height:280px;min-width:336px;' class='ezoic-ad ezoic-adl'><script data-ezscrex='false' data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[336,280],'businessknowhow_com-large-leaderboard-1','ezslot_2',107,'0','0']));</script></span><span style='width:336px;display:block;height:14px;margin:auto' class='reportline'><span style='text-align:center;font-size: smaller;float:left;line-height:normal;'><a href='https://www.ezoic.com/what-is-ezoic/' target='_blank' rel='noopener noreferrer nofollow' style='cursor:pointer'/><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2287%22%20height%3D%2218%22%3E%3C%2Fsvg%3E" alt="Ezoic" ;="" style="height:12px !important; padding:2px !important; border:0px !important; cursor:pointer !important; width: 58px !important; margin:0 !important; box-sizing: content-box !important;" class="ezlazyload" data-ezsrc="https://go.ezoic.net/utilcave_com/img/ezoic.png"/></a></span><span class='ez-report-ad-button' name='?pageview_id=631f33d0-38c9-4c21-5aa0-c9d324b83026&ad_position_id=107&impression_group_id=businessknowhow_com-large-leaderboard-1/2020-11-21/1921612&ad_size=336x280&domain_id=46971&url=https://www.businessknowhow.com/startup/business-success.htm' style='cursor: pointer!important; font-size:12px !important;color: #a5a5a5 ;float:right;text-decoration:none !important;font-family:arial !important;line-height:normal;'>report this ad</span></span></span>
+<!-- End Ezoic - Right Sidebar Bottom (3rd ad) - sidebar_bottom -->
+
+
+
+<!--
+******************************
+***** end ad 3*****
+******************************
+-->
+<!--
+******************************
+***** Start ad 4*****
+******************************
+-->
+
+<!-- Ezoic - Right Sidebar Extra Ad (not on every page) - sidebar_bottom -->
+<span id="ezoic-pub-ad-placeholder-108"></span>
+<!-- End Ezoic - Right Sidebar Extra Ad (not on every page) - sidebar_bottom -->
+
+
+<!--
+******************************
+***** end ad 4*****
+******************************
+-->    </div>
+    </div>
+
+    </div>
+    <hr>
+    <footer>
+        <div class="container">
+   <div class="row">
+      <div class="col-md-2 box">
+        <u>Company</u>
+         <ul>
+            <li><a href="/feedback">Contact Us</a></li>
+            <li><a href="/aboutus.htm">About Us</a></li>
+<li><a href="http://www.careerknowhow.com/" rel="nofollow">CareerKnowHow.com</a></li>
+         </ul>
+       </div>
+       <div class="col-md-2 box">
+<u>Information</u>
+    
+          <ul>
+             <li><a href="/Privacy.htm">Privacy Statement</a></li>
+             <li><a href="/disclaimer.htm">Disclaimer </a></li></ul>
+       </div>
+       <div class="col-md-5 box">
+          Free business tips to your inbox
+          <div style="background-color:#c2d7e8;padding: 10px;margin-left: 0px;
+    width: calc(65% + 50px);">
+             <input id="newsletter_bottom" placeholder="email address" aria-label="Email for newsletter" style="width: calc(100% - 75px);color:black;">
+             <button id="save_newsletter" onclick="sendCCOptIn($(&quot;#newsletter_bottom&quot;).val()); return false;">Sign Up</button>
+          </div>
+       </div>
+       <div class="col-md-3 box">
+          Follow Us<br>
+<div style="background-color:#c2d7e8;width: 251px;">
+          <a href="https://www.facebook.com/BizKnowHow" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2247%22%20height%3D%2245%22%3E%3C%2Fsvg%3E" border="0" class="ezlazyload" data-ezsrc="/images/social_r1_c1.png"></a>
+          <a href="https://twitter.com/intent/follow?source=followbutton&amp;variant=1.0&amp;screen_name=JanetAttard" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2246%22%20height%3D%2245%22%3E%3C%2Fsvg%3E" border="0" class="ezlazyload" data-ezsrc="/images/social_r1_c2.png"></a>
+          <a href="https://www.linkedin.com/in/janetattard" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2247%22%20height%3D%2245%22%3E%3C%2Fsvg%3E" border="0" class="ezlazyload" data-ezsrc="/images/social_r1_c3.png"></a>
+        <a href="https://www.pinterest.com/businessknowhow/" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2247%22%20height%3D%2245%22%3E%3C%2Fsvg%3E" class="ezlazyload" data-ezsrc="/images/social_r1_c4.png"></a>
+        <a href="https://www.instagram.com/businessknowhow/" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2243%22%20height%3D%2245%22%3E%3C%2Fsvg%3E" class="ezlazyload" data-ezsrc="/images/social_r1_c5.png"></a></div>
+       </div>
+    </div>
+
+</div>
+<center style="padding-bottom:15px;">
+            The information compiled on this site is Copyright 2020 by <a href="//www.businessknowhow.com/aboutus.htm">Attard Communications, Inc.</a> and by the individual authors.
+            <br>
+            Business Know-How® is a woman-owned business and a registered trademark of Attard Communications, Inc.
+            Phone: 631-467-8883.
+</center>
+    </footer>
+
+
+    <script src="/bundles/jquery?screx=1&sxcb=4a&v=2u0aRenDpYxArEyILB59ETSCA2cfQkSMlxb6jbMBqf81" type="text/ez-screx"></script>
+
+    <script src="/bundles/bootstrap?screx=1&sxcb=4a&v=lescQEuG5u4jd-GcVDBcbpUOSyTDIg0Kk9zHDX55GCw1" type="text/ez-screx"></script>
+
+    
+    <script type="text/ez-screx">
+        ezoicSiteSpeed(jQuery(document), String(/documentReady/).substring(1).slice(0,-1), String(/jQuery-document-dot-ready/).substring(1).slice(0,-1), function () {
+            $("[href]").each(function () {
+                if (this.href == window.location.href) {
+                    $(this).addClass("active");
+                }
+            });
+
+            $('#text_search').keyup(function (event) {
+                // Number 13 is the "Enter" key on the keyboard
+                if (event.key == 'Enter') {
+                    // Cancel the default action, if needed
+                    event.preventDefault();
+                    // Trigger the button element with a click
+                    setSearch();
+                }
+            });
+        });
+    </script>
+
+    <!-- Begin Constant Contact Active Forms -->
+    <script type="text/ez-screx">
+        var _ctct_m = "dfe206840e860aef884017087bc8986c";
+    </script>
+    <script id="signupScript" src="https://www.businessknowhow.com/ezossp/unknown/static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async="" defer="" type="text/ez-screx">
+    </script>
+    <!-- End Constant Contact Active Forms -->
+    <script type="text/ez-screx">
+        (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+        t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+        })(window, document, '_gscq','script','//widgets.getsitecontrol.com/175542/script.js');
+    </script>
+    <script type="text/ez-screx" async="" src="https://www.businessknowhow.com/ezossp/unknown/l.getsitecontrol.com/e4zjk1y7.js?screx=1&sxcb=4a">
+    </script>
+
+    <script type="text/ez-screx">(function(){var s = document.createElement('script'),e = ! document.body ? document.querySelector('head') : document.body;s.src = 'https://acsbapp.com/apps/app/assets/js/acsb.js';s.async = s.defer = true;s.onload = function(){acsbJS.init({statementLink : '',feedbackLink : '',footerHtml : '',hideMobile : false,hideTrigger : false,language : 'en',position : 'right',leadColor : '#146FF8',triggerColor : '#146FF8',triggerRadius : '50%',triggerPositionX : 'right',triggerPositionY : 'bottom',triggerIcon : 'default',triggerSize : 'medium',triggerOffsetX : 20,triggerOffsetY : 20,mobile : {triggerSize : 'small',triggerPositionX : 'right',triggerPositionY : 'center',triggerOffsetX : 0,triggerOffsetY : 0,triggerRadius : '50%'}});};e.appendChild(s);}());</script>
+
+    <style>
+        .acsb-footer a { visibility:hidden}
+    </style>
+
+
+<!-- cheetah --><script>__ez.queue.addFile('/detroitchicago/madison.js', '/detroitchicago/madison.js?gcb=6&cb=1', false, [], true, false, true, false);</script><script type="text/javascript">
+				var __inScopeForCCPA = false;
+		function __uspapi(command, version, callback) {
+			var response = null;
+			var successs = false;
+			if (command === "getUSPData" && version === 1) {
+				var uspString = "1"; // Version
+				if (__inScopeForCCPA) {
+					uspString += "Y"; // Has Explicit Notice for Opt Out been provided (ex footer or minor consent modal)
+					var result;
+					var consentCookie = (result = new RegExp('(?:^|; )ezoccpaconsent=([^;]*)').exec(document.cookie)) ? (result[1]) : null;
+					if (consentCookie === "nonconsent") {
+						uspString += "Y";
+					}
+					else {
+						uspString += "N";
+					}
+					uspString += "N" // Is pub a signatory to the IAB Limited Service Provider Agreement (http://www.iabprivacy.com/)
+				}
+				else {
+					uspString += "---";
+				}
+				response = {
+					uspString: uspString,
+					version: 1
+				};
+				success = true;
+			}
+			return callback(response, success);
+		};
+		function __receiveUspapiMessage(event) {
+			if (event.data.hasOwnProperty('__uspapiCall')) {
+				__uspapi('getUSPData', 1, function(uspData, success) {
+					event.source.postMessage({
+						__uspapiReturn: {
+							returnValue: uspData,
+							success: success,
+							callId: event.data.__uspapiCall.callId
+						}
+					},
+					event.origin);
+				});
+			}
+			return null;
+		};
+		window.addEventListener("message", __receiveUspapiMessage, false);
+</script>
+<script>var __ez_tkn_evnt = function() { if(typeof(_ezaq) != 'undefined'){if(window.ezogtk != "") {__ez.bit.AddAndFire(_ezaq.page_view_id,[new __ezDotData("ext_user_hash",window.ezogtk)]);}}};document.addEventListener("DOMContentLoaded", __ez.queue.addFunc("__ez_tkn_evnt", "__ez_tkn_evnt", event, false, ['/detroitchicago/minneapolis.js','/detroitchicago/memphis.js'], true, true, false, true));</script>
+
+		<script type="text/javascript">
+		(function(f,a){function g(b,a,c){b.addEventListener?b.addEventListener(a,c):b.attachEvent("on"+a,function(){c.call(b)})}function k(b){b&&("string"==typeof b["class"]&&b["class"]&&a.getElementById("uglipop_popbox").setAttribute("class",b["class"]),b.keepLayout&&!b["class"]&&a.getElementById("uglipop_popbox").setAttribute("style","position:relative;height:300px;width:300px;background-color:white;opacity:1;"),"string"==typeof b.content&&b.content&&"html"==b.source&&(a.getElementById("uglipop_popbox").innerHTML=b.content),"string"==typeof b.content&&b.content&&"div"==b.source&&(a.getElementById("uglipop_popbox").innerHTML=a.getElementById(b.content).innerHTML));a.getElementById("uglipop_overlay_wrapper").style.display="";a.getElementById("uglipop_overlay").style.display="";a.getElementById("uglipop_content_fixed").style.display=""}function h(){a.getElementById("uglipop_overlay_wrapper").style.display="none";a.getElementById("uglipop_overlay").style.display="none";a.getElementById("uglipop_content_fixed").style.display="none"}g(a,"DOMContentLoaded",function(){var b=a.createElement("div"),e=a.createElement("div"),c=a.createElement("div"),d=a.createElement("div");e.id="uglipop_content_fixed";e.setAttribute("style","position:fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);opacity:1;z-index:10000000;");c.id="uglipop_popbox";d.id="uglipop_overlay_wrapper";d.setAttribute("style","position:absolute;top:0;bottom:0;left:0;right:0;display:none");b.id="uglipop_overlay";b.setAttribute("style","position:fixed;top:0;bottom:0;left:0;right:0;opacity:0.3;width:100%;height:100%;background-color:black;");d.appendChild(b);e.appendChild(c);a.body.appendChild(d);a.body.appendChild(e);a.getElementById("uglipop_overlay_wrapper").style.display="none";a.getElementById("uglipop_overlay").style.display="none";a.getElementById("uglipop_content_fixed").style.display="none";d.addEventListener("click",h);g(f,"keydown",function(a){27==a.keyCode&&h()});f.uglipop=k})})(window,document);
+			var ezRBA = (function() {
+			  function init() {
+				var reportAdsBtns = document.querySelectorAll('.ez-report-ad-button');
+				for (var i = 0; i < reportAdsBtns.length; i++) {
+				  reportAdsBtns[i].addEventListener('click', function(e) {
+					var url = '<iframe src="https://svc.ezoic.com/pub/reportads/reportads.html' + e.target.getAttribute('name') + '" width="400" height="500" style="border-radius: 10px; box-shadow: 2px 2px 30px 6px rgba(0,0,0,0.75); border: 1px solid black;"></iframe>'
+					uglipop({
+					  class: 'none',
+					  source: 'html',
+					  content: url,
+					});
+				  });
+				}
+				function bindEvent(element, eventName, eventHandler) {
+					if (element.addEventListener) {
+						element.addEventListener(eventName, eventHandler, false);
+					} else if (element.attachEvent) {
+						element.attachEvent('on' + eventName, eventHandler);
+					}
+				}
+				bindEvent(window, 'message', function(e) {
+					if (e.data === 'close-report-ad-modal') {
+						document.getElementById('uglipop_overlay_wrapper').style.display = 'none';	
+						document.getElementById('uglipop_overlay').style.display = 'none';	
+						document.getElementById('uglipop_content_fixed').style.display = 'none';	
+					}
+				})
+			  }
+
+			  return {
+				init: init
+			  };
+			})();
+			ezRBA.init();
+		</script>
+<script type='text/javascript' data-cfasync='false'>(function(){var addListeners=function(eltype,els){for(var en=0;en<els.length;en++){var el=els[en];if(el.complete==false||(typeof(el.readyState)!='undefined'&&el.readyState<4)){var src=el.getAttribute('src')||el.currentSrc;if(typeof(el.readyState)!='undefined'&&el.readyState==0){el.addEventListener('loadstart',function(e){var src=e.getAttribute('src')||e.currentSrc;window["ezorqs"](e,src);});}else{var src=el.getAttribute('src')||el.currentSrc;window["ezorqs"](el,src);}
+el.addEventListener('load',function(e){var src=e.currentTarget.getAttribute('src')||e.srcElement.currentSrc;window["ezorqe"](e,src);});el.addEventListener('loadeddata',function(e){var src=e.currentTarget.getAttribute('src')||e.srcElement.currentSrc;window["ezorqe"](e,src);});el.addEventListener('error',function(e){var src=e.currentTarget.getAttribute('src')||e.srcElement.currentSrc;window["ezorqe"](e,src);});}}};var CssLoadedListeners=function(els){for(var en=0;en<els.length;en++){var el=els[en];if((el.getAttribute('rel')=='preload'||el.getAttribute('rel')=='stylesheet')&&el.getAttribute('href')!=null){if(isStyleSheetLoaded(el.getAttribute('href'))){window["ezorqs"](el,el.getAttribute('href'));var img=document.createElement('img');img.onerror=function(e){if(typeof e.path!="undefined"&&typeof e.path[0].currentSrc!="undefined"){window["ezorqe"](el,e.path[0].currentSrc);}else if(typeof e.srcElement!="undefined"&&typeof e.srcElement.href!="undefined"){window["ezorqe"](el,e.srcElement.href);}};img.src=el.getAttribute('href');}else{}}else{}}};function isStyleSheetLoaded(url){for(var i=0;i<document.styleSheets.length;i++){if(document.styleSheets[i].href==url){return true}}
+return false;}
+__ez_addAllListeners=function(){addListeners('img',document.querySelectorAll('img'));addListeners('video',document.querySelectorAll('video'));addListeners('audio',document.querySelectorAll('audio'));CssLoadedListeners(document.querySelectorAll('link'));if(typeof window["__ez"]["ssaf"]!="undefined"&&window["__ez"]["ssaf"].indexOf(16)>-1){if(typeof window["__ez"]["sshsdef"]!=="undefined"&&window["__ez"]["sshsdef"]===false){if(Element.prototype.addEventListener){if(typeof window["onload"]=="function"){window["addEventListener"]("load",window["onload"]);window["onload"]=null;}
+if(typeof document["onload"]=="function"){document["addEventListener"].addEventListener("load",document["onload"]);document["onload"]=null;}}}}}
+__ez.queue.addFunc("__ez_addAllListeners","__ez_addAllListeners",null,false,['/detroitchicago/tulsa.js'],true,true,true,true);}());</script>
+<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+	})();</script><script type='text/javascript' style='display:none;' async>
+__ez.queue.addFile('edmonton.php', '/detroitchicago/edmonton.webp?a=a&cb=191-6&shcb=34', true, ['/detroitchicago/minneapolis.js'], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=191-6&shcb=34', false, [], true, false, false, false);
+</script>
+
+<script>var _audins_dom="businessknowhow_com",_audins_did=46971;__ez.queue.addDelayFunc("audins.js","__ez.script.add", "//go.ezoic.net/detroitchicago/audins.js?cb=191-6");</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.businessknowhow_com,DomainId.46971" border="0" height="1" width="1" alt="Quantcast"/></div></noscript><noscript><img src="https://sb.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript>
+<script data-cfasync="false">__ez.queue.addFile('/detroitchicago/savannah.js', '/detroitchicago/savannah.js?gcb=6&cb=2', false, ['/detroitchicago/easton.js'], true, false, true, false);</script></body></html><!--[selectron:done]-->
